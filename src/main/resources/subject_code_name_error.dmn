@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:camunda="http://camunda.org/schema/1.0/dmn" id="Definitions_1yo4gz8" name="DRD" namespace="http://camunda.org/schema/1.0/dmn" exporter="Camunda Modeler" exporterVersion="4.12.0">
+  <decision id="subject_code_name_error_dmn" name="Check for Code and Name">
+    <decisionTable id="DecisionTable_13kfh54" hitPolicy="ANY">
+      <input id="Input_1" label="Subject Name" camunda:inputVariable="subjectName">
+        <inputExpression id="InputExpression_1" typeRef="string" expressionLanguage="javascript">
+          <text>subjectObj.name</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_1crcjcp" label="Subject Code" camunda:inputVariable="subjectCode">
+        <inputExpression id="LiteralExpression_1bmeyfi" typeRef="string" expressionLanguage="javascript">
+          <text>subjectObj.code;</text>
+        </inputExpression>
+      </input>
+      <output id="Output_1" typeRef="string" />
+      <rule id="DecisionRule_08ah7kj">
+        <inputEntry id="UnaryTests_148xdos" expressionLanguage="javascript">
+          <text>subjectName == '' || subjectName == null;</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0heh8e6" expressionLanguage="javascript">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_14dy6km">
+          <text>"Subject info is missing"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0pvsnon">
+        <inputEntry id="UnaryTests_0onm1k5">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_05lmuhl" expressionLanguage="javascript">
+          <text>subjectCode == '' || subjectCode == null;</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_06r36yd">
+          <text>"Subject info is missing"</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+  <dmndi:DMNDI>
+    <dmndi:DMNDiagram>
+      <dmndi:DMNShape dmnElementRef="subject_code_name_error_dmn">
+        <dc:Bounds height="80" width="180" x="160" y="100" />
+      </dmndi:DMNShape>
+    </dmndi:DMNDiagram>
+  </dmndi:DMNDI>
+</definitions>

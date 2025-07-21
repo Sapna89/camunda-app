@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:camunda="http://camunda.org/schema/1.0/dmn" id="Definitions_1m56nev" name="DRD" namespace="http://camunda.org/schema/1.0/dmn" exporter="Camunda Modeler" exporterVersion="4.12.0">
+  <decision id="subject_validation_collect_dmn" name="Subject Validation Collect">
+    <decisionTable id="DecisionTable_1ch1kxi" hitPolicy="COLLECT">
+      <input id="Input_1" label="Subject Data" camunda:inputVariable="notRequired">
+        <inputExpression id="InputExpression_1" typeRef="string">
+          <text>"notRequired"</text>
+        </inputExpression>
+      </input>
+      <output id="Output_1" label="Error Message" name="errorMessage" typeRef="string" />
+      <output id="OutputClause_1gm6chy" label="Field" name="field" typeRef="string" />
+      <rule id="DecisionRule_1yb3cjx">
+        <inputEntry id="UnaryTests_1542yvw" expressionLanguage="javascript">
+          <text>subjectObj.id == '' || subjectObj.id == null</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1758psj">
+          <text>"Subject Id is Missing"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0j4lrkt">
+          <text>"id"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0gwe9vu">
+        <inputEntry id="UnaryTests_1rib20n" expressionLanguage="javascript">
+          <text>subjectObj.name == '' || subjectObj.name == null</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_085wgjv">
+          <text>"Subject Name is Missing"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1326kjk">
+          <text>"name"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0rrnphl">
+        <inputEntry id="UnaryTests_1odz84x" expressionLanguage="javascript">
+          <text>subjectObj.displayName== '' || subjectObj.displayName == null</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1dxis5j">
+          <text>"Subject DisplayName is Missing"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_010f30a">
+          <text>"displayName"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1ltywsw">
+        <inputEntry id="UnaryTests_0dtphsb" expressionLanguage="javascript">
+          <text>subjectObj.code == '' || subjectObj.code == null</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0zldxou">
+          <text>"Subject Code is Missing"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_18hxuti">
+          <text>"code"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0g092f1">
+        <inputEntry id="UnaryTests_0d0r73s" expressionLanguage="javascript">
+          <text>subjectObj.subjectTeacherId == '' || subjectObj.subjectTeacherId == null</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1yk38a2">
+          <text>"Subject Teacher Id is Missing"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_082f64b">
+          <text>"subjectTeacherId"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_03aapks">
+        <inputEntry id="UnaryTests_1dmz5lq" expressionLanguage="javascript">
+          <text>subjectObj.subjectTeacherName == '' || subjectObj.subjectTeacherName == null</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_08gxhzk">
+          <text>"Subject Teacher Name is missing"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0c0zuxp">
+          <text>"subjectTeacherName"</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+  <dmndi:DMNDI>
+    <dmndi:DMNDiagram>
+      <dmndi:DMNShape dmnElementRef="subject_validation_collect_dmn">
+        <dc:Bounds height="80" width="180" x="160" y="100" />
+      </dmndi:DMNShape>
+    </dmndi:DMNDiagram>
+  </dmndi:DMNDI>
+</definitions>

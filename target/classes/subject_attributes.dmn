@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:biodi="http://bpmn.io/schema/dmn/biodi/2.0" xmlns:camunda="http://camunda.org/schema/1.0/dmn" id="Definitions_0h03mm7" name="DRD" namespace="http://camunda.org/schema/1.0/dmn" exporter="Camunda Modeler" exporterVersion="4.12.0">
+  <decision id="subject_attributes_dmn" name="Get Subject Attributes">
+    <decisionTable id="DecisionTable_1w05q7x" hitPolicy="FIRST">
+      <input id="Input_1" label="Subject Name" biodi:width="192" camunda:inputVariable="subjectName">
+        <inputExpression id="InputExpression_1" typeRef="string" expressionLanguage="javascript">
+          <text>subjectObj.name;</text>
+        </inputExpression>
+      </input>
+      <output id="Output_1" label="Subject Display Name" name="subjectDisplayName" typeRef="string" />
+      <output id="OutputClause_076oews" label="Subject Code" name="subjectCode" typeRef="string" />
+      <output id="OutputClause_1b1d7en" label="Subject Teacher Id" name="subjectTeacherId" typeRef="integer" />
+      <output id="OutputClause_09z6hvy" label="Subject Teacher Name" name="subjectTeacherName" typeRef="string" />
+      <rule id="DecisionRule_1j0h7pq">
+        <inputEntry id="UnaryTests_01hxe6a">
+          <text>"Maths"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_11wfcaq">
+          <text>"Mts"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1bco9pq">
+          <text>"M4"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_09s2w8b">
+          <text></text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1p6627n">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_05sbz9r">
+        <inputEntry id="UnaryTests_0ucr17h">
+          <text>"English"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1285q29">
+          <text>"Eng"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1x7ecm1">
+          <text>"E01"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_01gvdl5">
+          <text>12</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0bx3ur4">
+          <text>"Sapna"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0vomiy2">
+        <inputEntry id="UnaryTests_1evex41">
+          <text>"Maths"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1uhnl33">
+          <text>"Mts"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1hkqx54">
+          <text>"M92"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0be4gsb">
+          <text>10</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0u3n5il">
+          <text>"Naveen"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0wxvm5l">
+        <inputEntry id="UnaryTests_0qb09m9">
+          <text>"Science"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1ct4g97">
+          <text>"Sci"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1apa4ia">
+          <text>"Sc5"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1ieb1lx">
+          <text></text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0w0tdvs">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_15zt7cf">
+        <inputEntry id="UnaryTests_1et8yc4">
+          <text>"Social Studies"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1i1wwxh">
+          <text>"SS"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0ps3osq">
+          <text>"SS6"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1cl273j">
+          <text>16</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1eehjzm">
+          <text>"Mimi"</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+  <dmndi:DMNDI>
+    <dmndi:DMNDiagram>
+      <dmndi:DMNShape dmnElementRef="subject_attributes_dmn">
+        <dc:Bounds height="80" width="180" x="160" y="100" />
+      </dmndi:DMNShape>
+    </dmndi:DMNDiagram>
+  </dmndi:DMNDI>
+</definitions>

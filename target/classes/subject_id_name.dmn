@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:camunda="http://camunda.org/schema/1.0/dmn" id="Definitions_0jate1l" name="DRD" namespace="http://camunda.org/schema/1.0/dmn" exporter="Camunda Modeler" exporterVersion="4.12.0">
+  <decision id="subject_id_name_dmn" name="Get Subject Name">
+    <decisionTable id="DecisionTable_16jtfw0">
+      <input id="Input_1" label="Subject Id" camunda:inputVariable="subjectId">
+        <inputExpression id="InputExpression_1" typeRef="integer" expressionLanguage="javascript">
+          <text>subjectObj.id;</text>
+        </inputExpression>
+      </input>
+      <output id="Output_1" label="Subject Name" name="subjectName" typeRef="string" />
+      <rule id="DecisionRule_1wnyt7p">
+        <inputEntry id="UnaryTests_1nlxb86">
+          <text>1</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1prjsje">
+          <text>"English"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_082lezk">
+        <inputEntry id="UnaryTests_1buoaw6">
+          <text>2</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1ijy256">
+          <text>"Maths"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0lpptay">
+        <inputEntry id="UnaryTests_0mws70e">
+          <text>3</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1iocnm6">
+          <text>"Science"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0vdo4zd">
+        <inputEntry id="UnaryTests_0p41551">
+          <text>4</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0uzdnfq">
+          <text>"Social"</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+  <dmndi:DMNDI>
+    <dmndi:DMNDiagram>
+      <dmndi:DMNShape dmnElementRef="subject_id_name_dmn">
+        <dc:Bounds height="80" width="180" x="160" y="100" />
+      </dmndi:DMNShape>
+    </dmndi:DMNDiagram>
+  </dmndi:DMNDI>
+</definitions>
