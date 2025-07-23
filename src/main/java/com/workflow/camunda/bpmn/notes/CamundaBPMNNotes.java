@@ -187,6 +187,17 @@ org.camunda.bpm.engine.ProcessEngineException: ENGINE-02004 No outgoing sequence
   *
   * Script Task with multi-instance
   *
+  *===============================================================================
+  *
+  * Note: we cant interate a JSON array directly in a BPMN, we have to use something called spinList.
+  * Converting JSON array to Spinlist is super easy: with the help of the pom.xml dependency --> camunda-engine-plugin-spin.
+  *
+  * it involves 3 steps:
+  *
+  * |-----------| S() method is the spin method             |-----------------|                         |-----------|
+  * |JSON Array |------------------------------------------>|Jacson JSON Node |------------------------>| Spin List |
+  * |-----------| convert json to -> S(<Stringified JSON>)  |-----------------| and then to .elements() |-----------|
+  *
   *
   */
 

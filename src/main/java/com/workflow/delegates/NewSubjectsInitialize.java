@@ -9,7 +9,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-
+@Component
 public class NewSubjectsInitialize implements JavaDelegate{
     @Override
     public void execute(DelegateExecution execution) throws Exception {
@@ -20,6 +20,6 @@ public class NewSubjectsInitialize implements JavaDelegate{
             subject.put("id", Integer.toString(i));
             subjectList.add(subject);
         }
-        execution.setVariable("subjectList", "Sapna");
+        execution.setVariable("subjectList", subjectList);
     }
 }
