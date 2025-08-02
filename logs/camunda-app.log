@@ -1,0 +1,640 @@
+2025-08-02 12:23:51.535 [main] INFO  com.workflow.practice.Application - Starting Application using Java 21.0.8 with PID 21527 (/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes started by sapnanaveen in /Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app)
+2025-08-02 12:23:51.541 [main] INFO  com.workflow.practice.Application - No active profile set, falling back to 1 default profile: "default"
+2025-08-02 12:23:53.114 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-08-02 12:23:53.126 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-08-02 12:23:53.126 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-08-02 12:23:53.221 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-08-02 12:23:53.222 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1636 ms
+2025-08-02 12:23:53.279 [main] INFO  o.c.b.s.b.s.r.CamundaJerseyResourceConfig - Configuring camunda rest api.
+2025-08-02 12:23:53.301 [main] INFO  o.c.b.s.b.s.r.CamundaJerseyResourceConfig - Finished configuring camunda rest api.
+2025-08-02 12:23:53.857 [main] INFO  org.camunda.bpm.spring.boot - STARTER-SB040 Setting up jobExecutor with corePoolSize=3, maxPoolSize:10
+2025-08-02 12:23:53.929 [main] INFO  org.camunda.bpm.engine.cfg - ENGINE-12003 Plugin 'CompositeProcessEnginePlugin[genericPropertiesConfiguration, camundaProcessEngineConfiguration, camundaDatasourceConfiguration, camundaJobConfiguration, camundaHistoryConfiguration, camundaMetricsConfiguration, camundaAuthorizationConfiguration, camundaDeploymentConfiguration, createAdminUserConfiguration, failedJobConfiguration, eventPublisherPlugin, ApplicationContextClassloaderSwitchPlugin, ConnectProcessEnginePlugin, SpringBootSpinProcessEnginePlugin]' activated on process engine 'default'
+2025-08-02 12:23:55.062 [main] INFO  org.camunda.bpm.spring.boot - STARTER-SB021 Auto-Deploying resources: [file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/loan_eligibility.dmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/gateways.bpmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/subject_validation_multi_instance.dmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/firstProcess.bpmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/subject_code_name_error.dmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/loan_eligibility_with_discount.dmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/subject_attributes.dmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/sequence_flow.bpmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/subprocess_name_email.bpmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/dmn.bpmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/subprocess.bpmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/subject_validation_collect.dmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/subject_validation.dmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/multi_instance.bpmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/subject_id_name.dmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/tasks.bpmn]]
+2025-08-02 12:23:55.070 [main] INFO  o.c.b.s.b.s.e.EventPublisherPlugin - EVENTING-001: Initialized Camunda Spring Boot Eventing Engine Plugin.
+2025-08-02 12:23:55.071 [main] INFO  o.c.b.s.b.s.e.EventPublisherPlugin - EVENTING-003: Task events will be published as Spring Events.
+2025-08-02 12:23:55.071 [main] INFO  o.c.b.s.b.s.e.EventPublisherPlugin - EVENTING-005: Execution events will be published as Spring Events.
+2025-08-02 12:23:55.071 [main] INFO  o.c.b.s.b.s.e.EventPublisherPlugin - EVENTING-009: Listeners will not be invoked if a skipCustomListeners API parameter is set to true by user.
+2025-08-02 12:23:55.074 [main] INFO  o.c.b.s.b.s.e.EventPublisherPlugin - EVENTING-007: History events will be published as Spring events.
+2025-08-02 12:23:55.240 [main] INFO  org.camunda.bpm.connect - CNCT-01004 Discovered provider for connector id 'http-connector' and class 'org.camunda.connect.httpclient.impl.HttpConnectorImpl': 'org.camunda.connect.httpclient.impl.HttpConnectorProviderImpl'
+2025-08-02 12:23:55.251 [main] INFO  org.camunda.spin - SPIN-01010 Discovered Spin data format provider: org.camunda.spin.impl.json.jackson.format.JacksonJsonDataFormatProvider[name = application/json]
+2025-08-02 12:23:55.353 [main] INFO  org.camunda.spin - SPIN-01010 Discovered Spin data format provider: org.camunda.spin.impl.xml.dom.format.DomXmlDataFormatProvider[name = application/xml]
+2025-08-02 12:23:55.422 [main] INFO  org.camunda.spin - SPIN-01009 Discovered Spin data format: org.camunda.spin.impl.xml.dom.format.DomXmlDataFormat[name = application/xml]
+2025-08-02 12:23:55.423 [main] INFO  org.camunda.spin - SPIN-01009 Discovered Spin data format: org.camunda.spin.impl.json.jackson.format.JacksonJsonDataFormat[name = application/json]
+2025-08-02 12:23:55.624 [main] INFO  org.camunda.bpm.dmn.feel.scala - FEEL/SCALA-01001 Spin value mapper detected
+2025-08-02 12:23:55.680 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-08-02 12:23:56.138 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./camunda-h2-database user=
+2025-08-02 12:23:56.144 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-08-02 12:24:01.810 [main] INFO  org.camunda.bpm.engine - ENGINE-00001 Process Engine default created.
+2025-08-02 12:24:03.263 [main] INFO  o.c.b.s.b.s.w.f.LazyInitRegistration - lazy initialized org.camunda.bpm.spring.boot.starter.webapp.filter.LazySecurityFilter@13d019a4
+2025-08-02 12:24:03.265 [main] INFO  o.c.b.s.b.s.w.f.LazyInitRegistration - lazy initialized org.camunda.bpm.spring.boot.starter.webapp.filter.LazyProcessEnginesFilter@74667e6a
+2025-08-02 12:24:03.357 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-08-02 12:24:03.368 [main] INFO  com.workflow.practice.Application - Started Application in 12.603 seconds (process running for 13.13)
+2025-08-02 12:24:03.371 [main] INFO  org.camunda.bpm.engine.jobexecutor - ENGINE-14014 Starting up the JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor].
+2025-08-02 12:24:03.372 [JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor]] INFO  org.camunda.bpm.engine.jobexecutor - ENGINE-14018 JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor] starting to acquire jobs
+2025-08-02 12:24:33.810 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-02 12:24:33.815 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-08-02 12:24:33.829 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 14 ms
+2025-08-02 12:24:45.366 [http-nio-8080-exec-7] INFO  c.w.delegates.FetchEmailDelegate - Executing FetchEmailDelegate for process instance: 32d38399-6fbd-11f0-a525-4a4df0049497
+2025-08-02 12:24:45.370 [http-nio-8080-exec-7] INFO  c.w.delegates.FetchEmailDelegate - Accessing the input variable inside BPMN :: sapna.naveen@gmail.com
+2025-08-02 12:35:35.493 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m9s177ms).
+2025-08-02 12:54:59.909 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=14m54s361ms).
+2025-08-02 12:57:14.704 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-02 12:57:14.713 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-08-02 12:57:14.864 [SpringApplicationShutdownHook] INFO  org.camunda.bpm.engine.jobexecutor - ENGINE-14015 Shutting down the JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor]
+2025-08-02 12:57:14.864 [JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor]] INFO  org.camunda.bpm.engine.jobexecutor - ENGINE-14020 JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor] stopped job acquisition
+2025-08-02 12:57:14.868 [SpringApplicationShutdownHook] INFO  org.camunda.bpm.engine - ENGINE-00007 Process Engine default closed
+2025-08-02 12:57:14.870 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-08-02 12:57:14.888 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-08-02 12:58:03.488 [main] INFO  com.workflow.practice.Application - Starting Application using Java 21.0.8 with PID 21649 (/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes started by sapnanaveen in /Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app)
+2025-08-02 12:58:03.495 [main] INFO  com.workflow.practice.Application - No active profile set, falling back to 1 default profile: "default"
+2025-08-02 12:58:05.034 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-08-02 12:58:05.048 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-08-02 12:58:05.048 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-08-02 12:58:05.130 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-08-02 12:58:05.132 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1595 ms
+2025-08-02 12:58:05.182 [main] INFO  o.c.b.s.b.s.r.CamundaJerseyResourceConfig - Configuring camunda rest api.
+2025-08-02 12:58:05.210 [main] INFO  o.c.b.s.b.s.r.CamundaJerseyResourceConfig - Finished configuring camunda rest api.
+2025-08-02 12:58:05.762 [main] INFO  org.camunda.bpm.spring.boot - STARTER-SB040 Setting up jobExecutor with corePoolSize=3, maxPoolSize:10
+2025-08-02 12:58:05.840 [main] INFO  org.camunda.bpm.engine.cfg - ENGINE-12003 Plugin 'CompositeProcessEnginePlugin[genericPropertiesConfiguration, camundaProcessEngineConfiguration, camundaDatasourceConfiguration, camundaJobConfiguration, camundaHistoryConfiguration, camundaMetricsConfiguration, camundaAuthorizationConfiguration, camundaDeploymentConfiguration, createAdminUserConfiguration, failedJobConfiguration, eventPublisherPlugin, ApplicationContextClassloaderSwitchPlugin, ConnectProcessEnginePlugin, SpringBootSpinProcessEnginePlugin]' activated on process engine 'default'
+2025-08-02 12:58:06.962 [main] INFO  org.camunda.bpm.spring.boot - STARTER-SB021 Auto-Deploying resources: [file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/loan_eligibility.dmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/gateways.bpmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/subject_validation_multi_instance.dmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/firstProcess.bpmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/subject_code_name_error.dmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/loan_eligibility_with_discount.dmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/subject_attributes.dmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/sequence_flow.bpmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/subprocess_name_email.bpmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/dmn.bpmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/subprocess.bpmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/subject_validation_collect.dmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/subject_validation.dmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/multi_instance.bpmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/subject_id_name.dmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/tasks.bpmn]]
+2025-08-02 12:58:06.971 [main] INFO  o.c.b.s.b.s.e.EventPublisherPlugin - EVENTING-001: Initialized Camunda Spring Boot Eventing Engine Plugin.
+2025-08-02 12:58:06.971 [main] INFO  o.c.b.s.b.s.e.EventPublisherPlugin - EVENTING-003: Task events will be published as Spring Events.
+2025-08-02 12:58:06.971 [main] INFO  o.c.b.s.b.s.e.EventPublisherPlugin - EVENTING-005: Execution events will be published as Spring Events.
+2025-08-02 12:58:06.971 [main] INFO  o.c.b.s.b.s.e.EventPublisherPlugin - EVENTING-009: Listeners will not be invoked if a skipCustomListeners API parameter is set to true by user.
+2025-08-02 12:58:06.974 [main] INFO  o.c.b.s.b.s.e.EventPublisherPlugin - EVENTING-007: History events will be published as Spring events.
+2025-08-02 12:58:07.148 [main] INFO  org.camunda.bpm.connect - CNCT-01004 Discovered provider for connector id 'http-connector' and class 'org.camunda.connect.httpclient.impl.HttpConnectorImpl': 'org.camunda.connect.httpclient.impl.HttpConnectorProviderImpl'
+2025-08-02 12:58:07.154 [main] INFO  org.camunda.spin - SPIN-01010 Discovered Spin data format provider: org.camunda.spin.impl.json.jackson.format.JacksonJsonDataFormatProvider[name = application/json]
+2025-08-02 12:58:07.250 [main] INFO  org.camunda.spin - SPIN-01010 Discovered Spin data format provider: org.camunda.spin.impl.xml.dom.format.DomXmlDataFormatProvider[name = application/xml]
+2025-08-02 12:58:07.315 [main] INFO  org.camunda.spin - SPIN-01009 Discovered Spin data format: org.camunda.spin.impl.xml.dom.format.DomXmlDataFormat[name = application/xml]
+2025-08-02 12:58:07.317 [main] INFO  org.camunda.spin - SPIN-01009 Discovered Spin data format: org.camunda.spin.impl.json.jackson.format.JacksonJsonDataFormat[name = application/json]
+2025-08-02 12:58:07.502 [main] INFO  org.camunda.bpm.dmn.feel.scala - FEEL/SCALA-01001 Spin value mapper detected
+2025-08-02 12:58:07.557 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-08-02 12:58:08.009 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./camunda-h2-database user=
+2025-08-02 12:58:08.016 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-08-02 12:58:13.693 [main] INFO  org.camunda.bpm.engine - ENGINE-00001 Process Engine default created.
+2025-08-02 12:58:15.118 [main] INFO  o.c.b.s.b.s.w.f.LazyInitRegistration - lazy initialized org.camunda.bpm.spring.boot.starter.webapp.filter.LazyProcessEnginesFilter@3c19592c
+2025-08-02 12:58:15.147 [main] INFO  o.c.b.s.b.s.w.f.LazyInitRegistration - lazy initialized org.camunda.bpm.spring.boot.starter.webapp.filter.LazySecurityFilter@e5c2463
+2025-08-02 12:58:15.234 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-08-02 12:58:15.251 [main] INFO  com.workflow.practice.Application - Started Application in 12.551 seconds (process running for 13.012)
+2025-08-02 12:58:15.253 [main] INFO  org.camunda.bpm.engine.jobexecutor - ENGINE-14014 Starting up the JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor].
+2025-08-02 12:58:15.254 [JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor]] INFO  org.camunda.bpm.engine.jobexecutor - ENGINE-14018 JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor] starting to acquire jobs
+2025-08-02 12:58:56.594 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-02 12:58:56.596 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-08-02 12:58:56.602 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+2025-08-02 12:59:09.602 [http-nio-8080-exec-7] INFO  c.w.delegates.FetchEmailDelegate - Executing FetchEmailDelegate for process instance: 012f48ec-6fc2-11f0-a30c-4a4df0049497
+2025-08-02 12:59:09.607 [http-nio-8080-exec-7] INFO  c.w.delegates.FetchEmailDelegate - Accessing the input variable inside BPMN :: sapna.naveen@gmail.com
+2025-08-02 13:04:32.198 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m24s27ms).
+2025-08-02 13:15:56.597 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m24s348ms).
+2025-08-02 13:23:00.715 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-02 13:23:00.722 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-08-02 13:23:00.835 [SpringApplicationShutdownHook] INFO  org.camunda.bpm.engine.jobexecutor - ENGINE-14015 Shutting down the JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor]
+2025-08-02 13:23:00.836 [JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor]] INFO  org.camunda.bpm.engine.jobexecutor - ENGINE-14020 JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor] stopped job acquisition
+2025-08-02 13:23:00.843 [SpringApplicationShutdownHook] INFO  org.camunda.bpm.engine - ENGINE-00007 Process Engine default closed
+2025-08-02 13:23:00.845 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-08-02 13:23:01.044 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-08-02 13:23:44.450 [main] INFO  com.workflow.practice.Application - Starting Application using Java 21.0.8 with PID 21740 (/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes started by sapnanaveen in /Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app)
+2025-08-02 13:23:44.455 [main] INFO  com.workflow.practice.Application - No active profile set, falling back to 1 default profile: "default"
+2025-08-02 13:23:46.046 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-08-02 13:23:46.060 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-08-02 13:23:46.061 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-08-02 13:23:46.147 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-08-02 13:23:46.149 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1647 ms
+2025-08-02 13:23:46.202 [main] INFO  o.c.b.s.b.s.r.CamundaJerseyResourceConfig - Configuring camunda rest api.
+2025-08-02 13:23:46.224 [main] INFO  o.c.b.s.b.s.r.CamundaJerseyResourceConfig - Finished configuring camunda rest api.
+2025-08-02 13:23:46.773 [main] INFO  org.camunda.bpm.spring.boot - STARTER-SB040 Setting up jobExecutor with corePoolSize=3, maxPoolSize:10
+2025-08-02 13:23:46.858 [main] INFO  org.camunda.bpm.engine.cfg - ENGINE-12003 Plugin 'CompositeProcessEnginePlugin[genericPropertiesConfiguration, camundaProcessEngineConfiguration, camundaDatasourceConfiguration, camundaJobConfiguration, camundaHistoryConfiguration, camundaMetricsConfiguration, camundaAuthorizationConfiguration, camundaDeploymentConfiguration, createAdminUserConfiguration, failedJobConfiguration, eventPublisherPlugin, ApplicationContextClassloaderSwitchPlugin, ConnectProcessEnginePlugin, SpringBootSpinProcessEnginePlugin]' activated on process engine 'default'
+2025-08-02 13:23:48.010 [main] INFO  org.camunda.bpm.spring.boot - STARTER-SB021 Auto-Deploying resources: [file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/loan_eligibility.dmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/gateways.bpmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/subject_validation_multi_instance.dmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/firstProcess.bpmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/subject_code_name_error.dmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/loan_eligibility_with_discount.dmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/subject_attributes.dmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/sequence_flow.bpmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/subprocess_name_email.bpmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/dmn.bpmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/subprocess.bpmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/subject_validation_collect.dmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/subject_validation.dmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/multi_instance.bpmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/subject_id_name.dmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/tasks.bpmn]]
+2025-08-02 13:23:48.019 [main] INFO  o.c.b.s.b.s.e.EventPublisherPlugin - EVENTING-001: Initialized Camunda Spring Boot Eventing Engine Plugin.
+2025-08-02 13:23:48.019 [main] INFO  o.c.b.s.b.s.e.EventPublisherPlugin - EVENTING-003: Task events will be published as Spring Events.
+2025-08-02 13:23:48.019 [main] INFO  o.c.b.s.b.s.e.EventPublisherPlugin - EVENTING-005: Execution events will be published as Spring Events.
+2025-08-02 13:23:48.019 [main] INFO  o.c.b.s.b.s.e.EventPublisherPlugin - EVENTING-009: Listeners will not be invoked if a skipCustomListeners API parameter is set to true by user.
+2025-08-02 13:23:48.021 [main] INFO  o.c.b.s.b.s.e.EventPublisherPlugin - EVENTING-007: History events will be published as Spring events.
+2025-08-02 13:23:48.196 [main] INFO  org.camunda.bpm.connect - CNCT-01004 Discovered provider for connector id 'http-connector' and class 'org.camunda.connect.httpclient.impl.HttpConnectorImpl': 'org.camunda.connect.httpclient.impl.HttpConnectorProviderImpl'
+2025-08-02 13:23:48.204 [main] INFO  org.camunda.spin - SPIN-01010 Discovered Spin data format provider: org.camunda.spin.impl.json.jackson.format.JacksonJsonDataFormatProvider[name = application/json]
+2025-08-02 13:23:48.301 [main] INFO  org.camunda.spin - SPIN-01010 Discovered Spin data format provider: org.camunda.spin.impl.xml.dom.format.DomXmlDataFormatProvider[name = application/xml]
+2025-08-02 13:23:48.363 [main] INFO  org.camunda.spin - SPIN-01009 Discovered Spin data format: org.camunda.spin.impl.xml.dom.format.DomXmlDataFormat[name = application/xml]
+2025-08-02 13:23:48.364 [main] INFO  org.camunda.spin - SPIN-01009 Discovered Spin data format: org.camunda.spin.impl.json.jackson.format.JacksonJsonDataFormat[name = application/json]
+2025-08-02 13:23:48.566 [main] INFO  org.camunda.bpm.dmn.feel.scala - FEEL/SCALA-01001 Spin value mapper detected
+2025-08-02 13:23:48.625 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-08-02 13:23:49.072 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./camunda-h2-database user=
+2025-08-02 13:23:49.079 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-08-02 13:23:54.892 [main] INFO  org.camunda.bpm.engine - ENGINE-00001 Process Engine default created.
+2025-08-02 13:23:56.383 [main] INFO  o.c.b.s.b.s.w.f.LazyInitRegistration - lazy initialized org.camunda.bpm.spring.boot.starter.webapp.filter.LazySecurityFilter@236ae13d
+2025-08-02 13:23:56.385 [main] INFO  o.c.b.s.b.s.w.f.LazyInitRegistration - lazy initialized org.camunda.bpm.spring.boot.starter.webapp.filter.LazyProcessEnginesFilter@4315c28c
+2025-08-02 13:23:56.465 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-08-02 13:23:56.478 [main] INFO  com.workflow.practice.Application - Started Application in 12.817 seconds (process running for 13.28)
+2025-08-02 13:23:56.481 [main] INFO  org.camunda.bpm.engine.jobexecutor - ENGINE-14014 Starting up the JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor].
+2025-08-02 13:23:56.482 [JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor]] INFO  org.camunda.bpm.engine.jobexecutor - ENGINE-14018 JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor] starting to acquire jobs
+2025-08-02 13:24:04.110 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-02 13:24:04.111 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-08-02 13:24:04.118 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+2025-08-02 13:24:25.849 [http-nio-8080-exec-7] INFO  c.w.delegates.FetchEmailDelegate - Executing FetchEmailDelegate for process instance: 892aa87a-6fc5-11f0-b106-4a4df0049497
+2025-08-02 13:24:25.854 [http-nio-8080-exec-7] INFO  c.w.delegates.FetchEmailDelegate - Accessing the input variable inside BPMN :: sapna.naveen@gmail.com
+2025-08-02 13:33:58.057 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-02 13:33:58.081 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-08-02 13:33:58.725 [SpringApplicationShutdownHook] INFO  org.camunda.bpm.engine.jobexecutor - ENGINE-14015 Shutting down the JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor]
+2025-08-02 13:33:58.731 [JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor]] INFO  org.camunda.bpm.engine.jobexecutor - ENGINE-14020 JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor] stopped job acquisition
+2025-08-02 13:33:58.737 [SpringApplicationShutdownHook] INFO  org.camunda.bpm.engine - ENGINE-00007 Process Engine default closed
+2025-08-02 13:33:58.743 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-08-02 13:33:58.781 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-08-02 13:34:22.668 [main] INFO  com.workflow.practice.Application - Starting Application using Java 21.0.8 with PID 21838 (/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes started by sapnanaveen in /Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app)
+2025-08-02 13:34:22.673 [main] INFO  com.workflow.practice.Application - No active profile set, falling back to 1 default profile: "default"
+2025-08-02 13:34:24.241 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-08-02 13:34:24.257 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-08-02 13:34:24.258 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-08-02 13:34:24.325 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-08-02 13:34:24.326 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1602 ms
+2025-08-02 13:34:24.401 [main] INFO  o.c.b.s.b.s.r.CamundaJerseyResourceConfig - Configuring camunda rest api.
+2025-08-02 13:34:24.428 [main] INFO  o.c.b.s.b.s.r.CamundaJerseyResourceConfig - Finished configuring camunda rest api.
+2025-08-02 13:34:24.986 [main] INFO  org.camunda.bpm.spring.boot - STARTER-SB040 Setting up jobExecutor with corePoolSize=3, maxPoolSize:10
+2025-08-02 13:34:25.058 [main] INFO  org.camunda.bpm.engine.cfg - ENGINE-12003 Plugin 'CompositeProcessEnginePlugin[genericPropertiesConfiguration, camundaProcessEngineConfiguration, camundaDatasourceConfiguration, camundaJobConfiguration, camundaHistoryConfiguration, camundaMetricsConfiguration, camundaAuthorizationConfiguration, camundaDeploymentConfiguration, createAdminUserConfiguration, failedJobConfiguration, eventPublisherPlugin, ApplicationContextClassloaderSwitchPlugin, ConnectProcessEnginePlugin, SpringBootSpinProcessEnginePlugin]' activated on process engine 'default'
+2025-08-02 13:34:26.176 [main] INFO  org.camunda.bpm.spring.boot - STARTER-SB021 Auto-Deploying resources: [file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/loan_eligibility.dmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/gateways.bpmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/subject_validation_multi_instance.dmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/firstProcess.bpmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/subject_code_name_error.dmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/loan_eligibility_with_discount.dmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/subject_attributes.dmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/sequence_flow.bpmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/subprocess_name_email.bpmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/dmn.bpmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/subprocess.bpmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/subject_validation_collect.dmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/subject_validation.dmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/multi_instance.bpmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/subject_id_name.dmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/tasks.bpmn]]
+2025-08-02 13:34:26.185 [main] INFO  o.c.b.s.b.s.e.EventPublisherPlugin - EVENTING-001: Initialized Camunda Spring Boot Eventing Engine Plugin.
+2025-08-02 13:34:26.185 [main] INFO  o.c.b.s.b.s.e.EventPublisherPlugin - EVENTING-003: Task events will be published as Spring Events.
+2025-08-02 13:34:26.185 [main] INFO  o.c.b.s.b.s.e.EventPublisherPlugin - EVENTING-005: Execution events will be published as Spring Events.
+2025-08-02 13:34:26.185 [main] INFO  o.c.b.s.b.s.e.EventPublisherPlugin - EVENTING-009: Listeners will not be invoked if a skipCustomListeners API parameter is set to true by user.
+2025-08-02 13:34:26.187 [main] INFO  o.c.b.s.b.s.e.EventPublisherPlugin - EVENTING-007: History events will be published as Spring events.
+2025-08-02 13:34:26.357 [main] INFO  org.camunda.bpm.connect - CNCT-01004 Discovered provider for connector id 'http-connector' and class 'org.camunda.connect.httpclient.impl.HttpConnectorImpl': 'org.camunda.connect.httpclient.impl.HttpConnectorProviderImpl'
+2025-08-02 13:34:26.364 [main] INFO  org.camunda.spin - SPIN-01010 Discovered Spin data format provider: org.camunda.spin.impl.json.jackson.format.JacksonJsonDataFormatProvider[name = application/json]
+2025-08-02 13:34:26.464 [main] INFO  org.camunda.spin - SPIN-01010 Discovered Spin data format provider: org.camunda.spin.impl.xml.dom.format.DomXmlDataFormatProvider[name = application/xml]
+2025-08-02 13:34:26.543 [main] INFO  org.camunda.spin - SPIN-01009 Discovered Spin data format: org.camunda.spin.impl.xml.dom.format.DomXmlDataFormat[name = application/xml]
+2025-08-02 13:34:26.544 [main] INFO  org.camunda.spin - SPIN-01009 Discovered Spin data format: org.camunda.spin.impl.json.jackson.format.JacksonJsonDataFormat[name = application/json]
+2025-08-02 13:34:26.727 [main] INFO  org.camunda.bpm.dmn.feel.scala - FEEL/SCALA-01001 Spin value mapper detected
+2025-08-02 13:34:26.785 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-08-02 13:34:27.238 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./camunda-h2-database user=
+2025-08-02 13:34:27.246 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-08-02 13:34:33.010 [main] INFO  org.camunda.bpm.engine - ENGINE-00001 Process Engine default created.
+2025-08-02 13:34:34.586 [main] INFO  o.c.b.s.b.s.w.f.LazyInitRegistration - lazy initialized org.camunda.bpm.spring.boot.starter.webapp.filter.LazySecurityFilter@8fd91d1
+2025-08-02 13:34:34.612 [main] INFO  o.c.b.s.b.s.w.f.LazyInitRegistration - lazy initialized org.camunda.bpm.spring.boot.starter.webapp.filter.LazyProcessEnginesFilter@4b033eac
+2025-08-02 13:34:34.918 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-08-02 13:34:34.936 [main] INFO  com.workflow.practice.Application - Started Application in 13.072 seconds (process running for 13.528)
+2025-08-02 13:34:34.938 [main] INFO  org.camunda.bpm.engine.jobexecutor - ENGINE-14014 Starting up the JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor].
+2025-08-02 13:34:34.939 [JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor]] INFO  org.camunda.bpm.engine.jobexecutor - ENGINE-14018 JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor] starting to acquire jobs
+2025-08-02 13:34:36.893 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-02 13:34:36.893 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-08-02 13:34:36.895 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-08-02 13:34:51.105 [http-nio-8080-exec-7] INFO  c.w.delegates.FetchEmailDelegate - Executing FetchEmailDelegate for process instance: fd9f0438-6fc6-11f0-b4de-4a4df0049497
+2025-08-02 13:34:51.110 [http-nio-8080-exec-7] INFO  c.w.delegates.FetchEmailDelegate - Accessing the input variable inside BPMN :: sapna.naveen@gmail.com
+2025-08-02 13:35:51.074 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-02 13:35:51.081 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-08-02 13:35:51.196 [SpringApplicationShutdownHook] INFO  org.camunda.bpm.engine.jobexecutor - ENGINE-14015 Shutting down the JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor]
+2025-08-02 13:35:51.196 [JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor]] INFO  org.camunda.bpm.engine.jobexecutor - ENGINE-14020 JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor] stopped job acquisition
+2025-08-02 13:35:51.199 [SpringApplicationShutdownHook] INFO  org.camunda.bpm.engine - ENGINE-00007 Process Engine default closed
+2025-08-02 13:35:51.200 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-08-02 13:35:51.356 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-08-02 13:36:28.034 [main] INFO  com.workflow.practice.Application - Starting Application using Java 21.0.8 with PID 21889 (/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes started by sapnanaveen in /Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app)
+2025-08-02 13:36:28.040 [main] INFO  com.workflow.practice.Application - No active profile set, falling back to 1 default profile: "default"
+2025-08-02 13:36:29.637 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-08-02 13:36:29.652 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-08-02 13:36:29.652 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-08-02 13:36:29.731 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-08-02 13:36:29.733 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1647 ms
+2025-08-02 13:36:29.788 [main] INFO  o.c.b.s.b.s.r.CamundaJerseyResourceConfig - Configuring camunda rest api.
+2025-08-02 13:36:29.813 [main] INFO  o.c.b.s.b.s.r.CamundaJerseyResourceConfig - Finished configuring camunda rest api.
+2025-08-02 13:36:30.364 [main] INFO  org.camunda.bpm.spring.boot - STARTER-SB040 Setting up jobExecutor with corePoolSize=3, maxPoolSize:10
+2025-08-02 13:36:30.445 [main] INFO  org.camunda.bpm.engine.cfg - ENGINE-12003 Plugin 'CompositeProcessEnginePlugin[genericPropertiesConfiguration, camundaProcessEngineConfiguration, camundaDatasourceConfiguration, camundaJobConfiguration, camundaHistoryConfiguration, camundaMetricsConfiguration, camundaAuthorizationConfiguration, camundaDeploymentConfiguration, createAdminUserConfiguration, failedJobConfiguration, eventPublisherPlugin, ApplicationContextClassloaderSwitchPlugin, ConnectProcessEnginePlugin, SpringBootSpinProcessEnginePlugin]' activated on process engine 'default'
+2025-08-02 13:36:31.578 [main] INFO  org.camunda.bpm.spring.boot - STARTER-SB021 Auto-Deploying resources: [file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/loan_eligibility.dmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/gateways.bpmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/subject_validation_multi_instance.dmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/firstProcess.bpmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/subject_code_name_error.dmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/loan_eligibility_with_discount.dmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/subject_attributes.dmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/sequence_flow.bpmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/subprocess_name_email.bpmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/dmn.bpmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/subprocess.bpmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/subject_validation_collect.dmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/subject_validation.dmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/multi_instance.bpmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/subject_id_name.dmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/tasks.bpmn]]
+2025-08-02 13:36:31.587 [main] INFO  o.c.b.s.b.s.e.EventPublisherPlugin - EVENTING-001: Initialized Camunda Spring Boot Eventing Engine Plugin.
+2025-08-02 13:36:31.587 [main] INFO  o.c.b.s.b.s.e.EventPublisherPlugin - EVENTING-003: Task events will be published as Spring Events.
+2025-08-02 13:36:31.587 [main] INFO  o.c.b.s.b.s.e.EventPublisherPlugin - EVENTING-005: Execution events will be published as Spring Events.
+2025-08-02 13:36:31.587 [main] INFO  o.c.b.s.b.s.e.EventPublisherPlugin - EVENTING-009: Listeners will not be invoked if a skipCustomListeners API parameter is set to true by user.
+2025-08-02 13:36:31.590 [main] INFO  o.c.b.s.b.s.e.EventPublisherPlugin - EVENTING-007: History events will be published as Spring events.
+2025-08-02 13:36:31.749 [main] INFO  org.camunda.bpm.connect - CNCT-01004 Discovered provider for connector id 'http-connector' and class 'org.camunda.connect.httpclient.impl.HttpConnectorImpl': 'org.camunda.connect.httpclient.impl.HttpConnectorProviderImpl'
+2025-08-02 13:36:31.754 [main] INFO  org.camunda.spin - SPIN-01010 Discovered Spin data format provider: org.camunda.spin.impl.json.jackson.format.JacksonJsonDataFormatProvider[name = application/json]
+2025-08-02 13:36:31.849 [main] INFO  org.camunda.spin - SPIN-01010 Discovered Spin data format provider: org.camunda.spin.impl.xml.dom.format.DomXmlDataFormatProvider[name = application/xml]
+2025-08-02 13:36:31.919 [main] INFO  org.camunda.spin - SPIN-01009 Discovered Spin data format: org.camunda.spin.impl.xml.dom.format.DomXmlDataFormat[name = application/xml]
+2025-08-02 13:36:31.921 [main] INFO  org.camunda.spin - SPIN-01009 Discovered Spin data format: org.camunda.spin.impl.json.jackson.format.JacksonJsonDataFormat[name = application/json]
+2025-08-02 13:36:32.100 [main] INFO  org.camunda.bpm.dmn.feel.scala - FEEL/SCALA-01001 Spin value mapper detected
+2025-08-02 13:36:32.164 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-08-02 13:36:32.634 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./camunda-h2-database user=
+2025-08-02 13:36:32.641 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-08-02 13:36:38.423 [main] INFO  org.camunda.bpm.engine - ENGINE-00001 Process Engine default created.
+2025-08-02 13:36:39.897 [main] INFO  o.c.b.s.b.s.w.f.LazyInitRegistration - lazy initialized org.camunda.bpm.spring.boot.starter.webapp.filter.LazySecurityFilter@236ae13d
+2025-08-02 13:36:39.899 [main] INFO  o.c.b.s.b.s.w.f.LazyInitRegistration - lazy initialized org.camunda.bpm.spring.boot.starter.webapp.filter.LazyProcessEnginesFilter@4315c28c
+2025-08-02 13:36:39.978 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-08-02 13:36:39.989 [main] INFO  com.workflow.practice.Application - Started Application in 12.737 seconds (process running for 13.201)
+2025-08-02 13:36:39.992 [main] INFO  org.camunda.bpm.engine.jobexecutor - ENGINE-14014 Starting up the JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor].
+2025-08-02 13:36:39.993 [JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor]] INFO  org.camunda.bpm.engine.jobexecutor - ENGINE-14018 JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor] starting to acquire jobs
+2025-08-02 13:36:55.890 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-02 13:36:55.891 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-08-02 13:36:55.902 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 11 ms
+2025-08-02 13:37:11.437 [http-nio-8080-exec-7] INFO  c.w.delegates.FetchEmailDelegate - Executing FetchEmailDelegate for process instance: 51438637-6fc7-11f0-8613-4a4df0049497
+2025-08-02 13:37:11.441 [http-nio-8080-exec-7] INFO  c.w.delegates.FetchEmailDelegate - Accessing the input variable inside BPMN :: sapna.naveen@gmail.com
+2025-08-02 13:54:36.627 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=14m3s831ms).
+2025-08-02 14:02:14.611 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-02 14:02:14.623 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-08-02 14:02:15.240 [SpringApplicationShutdownHook] INFO  org.camunda.bpm.engine.jobexecutor - ENGINE-14015 Shutting down the JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor]
+2025-08-02 14:02:15.246 [JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor]] INFO  org.camunda.bpm.engine.jobexecutor - ENGINE-14020 JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor] stopped job acquisition
+2025-08-02 14:02:15.254 [SpringApplicationShutdownHook] INFO  org.camunda.bpm.engine - ENGINE-00007 Process Engine default closed
+2025-08-02 14:02:15.258 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-08-02 14:02:15.291 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-08-02 14:02:40.825 [main] INFO  com.workflow.practice.Application - Starting Application using Java 21.0.8 with PID 21986 (/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes started by sapnanaveen in /Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app)
+2025-08-02 14:02:40.830 [main] INFO  com.workflow.practice.Application - No active profile set, falling back to 1 default profile: "default"
+2025-08-02 14:02:42.442 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-08-02 14:02:42.453 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-08-02 14:02:42.453 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-08-02 14:02:42.538 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-08-02 14:02:42.539 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1666 ms
+2025-08-02 14:02:42.594 [main] INFO  o.c.b.s.b.s.r.CamundaJerseyResourceConfig - Configuring camunda rest api.
+2025-08-02 14:02:42.617 [main] INFO  o.c.b.s.b.s.r.CamundaJerseyResourceConfig - Finished configuring camunda rest api.
+2025-08-02 14:02:43.181 [main] INFO  org.camunda.bpm.spring.boot - STARTER-SB040 Setting up jobExecutor with corePoolSize=3, maxPoolSize:10
+2025-08-02 14:02:43.262 [main] INFO  org.camunda.bpm.engine.cfg - ENGINE-12003 Plugin 'CompositeProcessEnginePlugin[genericPropertiesConfiguration, camundaProcessEngineConfiguration, camundaDatasourceConfiguration, camundaJobConfiguration, camundaHistoryConfiguration, camundaMetricsConfiguration, camundaAuthorizationConfiguration, camundaDeploymentConfiguration, createAdminUserConfiguration, failedJobConfiguration, eventPublisherPlugin, ApplicationContextClassloaderSwitchPlugin, ConnectProcessEnginePlugin, SpringBootSpinProcessEnginePlugin]' activated on process engine 'default'
+2025-08-02 14:02:44.421 [main] INFO  org.camunda.bpm.spring.boot - STARTER-SB021 Auto-Deploying resources: [file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/loan_eligibility.dmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/gateways.bpmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/subject_validation_multi_instance.dmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/firstProcess.bpmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/subject_code_name_error.dmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/loan_eligibility_with_discount.dmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/subject_attributes.dmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/sequence_flow.bpmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/subprocess_name_email.bpmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/dmn.bpmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/subprocess.bpmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/subject_validation_collect.dmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/subject_validation.dmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/multi_instance.bpmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/subject_id_name.dmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/tasks.bpmn]]
+2025-08-02 14:02:44.428 [main] INFO  o.c.b.s.b.s.e.EventPublisherPlugin - EVENTING-001: Initialized Camunda Spring Boot Eventing Engine Plugin.
+2025-08-02 14:02:44.429 [main] INFO  o.c.b.s.b.s.e.EventPublisherPlugin - EVENTING-003: Task events will be published as Spring Events.
+2025-08-02 14:02:44.430 [main] INFO  o.c.b.s.b.s.e.EventPublisherPlugin - EVENTING-005: Execution events will be published as Spring Events.
+2025-08-02 14:02:44.430 [main] INFO  o.c.b.s.b.s.e.EventPublisherPlugin - EVENTING-009: Listeners will not be invoked if a skipCustomListeners API parameter is set to true by user.
+2025-08-02 14:02:44.432 [main] INFO  o.c.b.s.b.s.e.EventPublisherPlugin - EVENTING-007: History events will be published as Spring events.
+2025-08-02 14:02:44.609 [main] INFO  org.camunda.bpm.connect - CNCT-01004 Discovered provider for connector id 'http-connector' and class 'org.camunda.connect.httpclient.impl.HttpConnectorImpl': 'org.camunda.connect.httpclient.impl.HttpConnectorProviderImpl'
+2025-08-02 14:02:44.618 [main] INFO  org.camunda.spin - SPIN-01010 Discovered Spin data format provider: org.camunda.spin.impl.json.jackson.format.JacksonJsonDataFormatProvider[name = application/json]
+2025-08-02 14:02:44.715 [main] INFO  org.camunda.spin - SPIN-01010 Discovered Spin data format provider: org.camunda.spin.impl.xml.dom.format.DomXmlDataFormatProvider[name = application/xml]
+2025-08-02 14:02:44.790 [main] INFO  org.camunda.spin - SPIN-01009 Discovered Spin data format: org.camunda.spin.impl.xml.dom.format.DomXmlDataFormat[name = application/xml]
+2025-08-02 14:02:44.791 [main] INFO  org.camunda.spin - SPIN-01009 Discovered Spin data format: org.camunda.spin.impl.json.jackson.format.JacksonJsonDataFormat[name = application/json]
+2025-08-02 14:02:44.985 [main] INFO  org.camunda.bpm.dmn.feel.scala - FEEL/SCALA-01001 Spin value mapper detected
+2025-08-02 14:02:45.050 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-08-02 14:02:45.546 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./camunda-h2-database user=
+2025-08-02 14:02:45.552 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-08-02 14:02:51.236 [main] INFO  org.camunda.bpm.engine - ENGINE-00001 Process Engine default created.
+2025-08-02 14:02:52.697 [main] INFO  o.c.b.s.b.s.w.f.LazyInitRegistration - lazy initialized org.camunda.bpm.spring.boot.starter.webapp.filter.LazyProcessEnginesFilter@193eb1ba
+2025-08-02 14:02:52.726 [main] INFO  o.c.b.s.b.s.w.f.LazyInitRegistration - lazy initialized org.camunda.bpm.spring.boot.starter.webapp.filter.LazySecurityFilter@63bfdbcb
+2025-08-02 14:02:52.808 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-08-02 14:02:52.820 [main] INFO  com.workflow.practice.Application - Started Application in 12.8 seconds (process running for 13.333)
+2025-08-02 14:02:52.823 [main] INFO  org.camunda.bpm.engine.jobexecutor - ENGINE-14014 Starting up the JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor].
+2025-08-02 14:02:52.823 [JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor]] INFO  org.camunda.bpm.engine.jobexecutor - ENGINE-14018 JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor] starting to acquire jobs
+2025-08-02 14:03:24.686 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-02 14:03:24.687 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-08-02 14:03:24.695 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+2025-08-02 14:03:36.890 [http-nio-8080-exec-7] INFO  c.w.delegates.FetchEmailDelegate - Executing FetchEmailDelegate for process instance: 024cb11c-6fcb-11f0-ab23-4a4df0049497
+2025-08-02 14:03:36.894 [http-nio-8080-exec-7] INFO  c.w.delegates.FetchEmailDelegate - Accessing the input variable inside BPMN :: sapna.naveen@gmail.com
+2025-08-02 14:04:51.684 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-02 14:04:51.694 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-08-02 14:04:51.810 [SpringApplicationShutdownHook] INFO  org.camunda.bpm.engine.jobexecutor - ENGINE-14015 Shutting down the JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor]
+2025-08-02 14:04:51.811 [JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor]] INFO  org.camunda.bpm.engine.jobexecutor - ENGINE-14020 JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor] stopped job acquisition
+2025-08-02 14:04:51.813 [SpringApplicationShutdownHook] INFO  org.camunda.bpm.engine - ENGINE-00007 Process Engine default closed
+2025-08-02 14:04:51.814 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-08-02 14:04:51.831 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-08-02 14:05:41.849 [main] INFO  com.workflow.practice.Application - Starting Application using Java 21.0.8 with PID 22051 (/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes started by sapnanaveen in /Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app)
+2025-08-02 14:05:41.853 [main] INFO  com.workflow.practice.Application - No active profile set, falling back to 1 default profile: "default"
+2025-08-02 14:05:43.414 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-08-02 14:05:43.428 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-08-02 14:05:43.428 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-08-02 14:05:43.523 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-08-02 14:05:43.524 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1629 ms
+2025-08-02 14:05:43.571 [main] INFO  o.c.b.s.b.s.r.CamundaJerseyResourceConfig - Configuring camunda rest api.
+2025-08-02 14:05:43.595 [main] INFO  o.c.b.s.b.s.r.CamundaJerseyResourceConfig - Finished configuring camunda rest api.
+2025-08-02 14:05:44.148 [main] INFO  org.camunda.bpm.spring.boot - STARTER-SB040 Setting up jobExecutor with corePoolSize=3, maxPoolSize:10
+2025-08-02 14:05:44.232 [main] INFO  org.camunda.bpm.engine.cfg - ENGINE-12003 Plugin 'CompositeProcessEnginePlugin[genericPropertiesConfiguration, camundaProcessEngineConfiguration, camundaDatasourceConfiguration, camundaJobConfiguration, camundaHistoryConfiguration, camundaMetricsConfiguration, camundaAuthorizationConfiguration, camundaDeploymentConfiguration, createAdminUserConfiguration, failedJobConfiguration, eventPublisherPlugin, ApplicationContextClassloaderSwitchPlugin, ConnectProcessEnginePlugin, SpringBootSpinProcessEnginePlugin]' activated on process engine 'default'
+2025-08-02 14:05:45.312 [main] INFO  org.camunda.bpm.spring.boot - STARTER-SB021 Auto-Deploying resources: [file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/loan_eligibility.dmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/gateways.bpmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/subject_validation_multi_instance.dmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/firstProcess.bpmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/subject_code_name_error.dmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/loan_eligibility_with_discount.dmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/subject_attributes.dmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/sequence_flow.bpmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/subprocess_name_email.bpmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/dmn.bpmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/subprocess.bpmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/subject_validation_collect.dmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/subject_validation.dmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/multi_instance.bpmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/subject_id_name.dmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/tasks.bpmn]]
+2025-08-02 14:05:45.317 [main] INFO  o.c.b.s.b.s.e.EventPublisherPlugin - EVENTING-001: Initialized Camunda Spring Boot Eventing Engine Plugin.
+2025-08-02 14:05:45.318 [main] INFO  o.c.b.s.b.s.e.EventPublisherPlugin - EVENTING-003: Task events will be published as Spring Events.
+2025-08-02 14:05:45.318 [main] INFO  o.c.b.s.b.s.e.EventPublisherPlugin - EVENTING-005: Execution events will be published as Spring Events.
+2025-08-02 14:05:45.318 [main] INFO  o.c.b.s.b.s.e.EventPublisherPlugin - EVENTING-009: Listeners will not be invoked if a skipCustomListeners API parameter is set to true by user.
+2025-08-02 14:05:45.320 [main] INFO  o.c.b.s.b.s.e.EventPublisherPlugin - EVENTING-007: History events will be published as Spring events.
+2025-08-02 14:05:45.485 [main] INFO  org.camunda.bpm.connect - CNCT-01004 Discovered provider for connector id 'http-connector' and class 'org.camunda.connect.httpclient.impl.HttpConnectorImpl': 'org.camunda.connect.httpclient.impl.HttpConnectorProviderImpl'
+2025-08-02 14:05:45.492 [main] INFO  org.camunda.spin - SPIN-01010 Discovered Spin data format provider: org.camunda.spin.impl.json.jackson.format.JacksonJsonDataFormatProvider[name = application/json]
+2025-08-02 14:05:45.578 [main] INFO  org.camunda.spin - SPIN-01010 Discovered Spin data format provider: org.camunda.spin.impl.xml.dom.format.DomXmlDataFormatProvider[name = application/xml]
+2025-08-02 14:05:45.647 [main] INFO  org.camunda.spin - SPIN-01009 Discovered Spin data format: org.camunda.spin.impl.xml.dom.format.DomXmlDataFormat[name = application/xml]
+2025-08-02 14:05:45.648 [main] INFO  org.camunda.spin - SPIN-01009 Discovered Spin data format: org.camunda.spin.impl.json.jackson.format.JacksonJsonDataFormat[name = application/json]
+2025-08-02 14:05:45.837 [main] INFO  org.camunda.bpm.dmn.feel.scala - FEEL/SCALA-01001 Spin value mapper detected
+2025-08-02 14:05:45.893 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-08-02 14:05:46.346 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./camunda-h2-database user=
+2025-08-02 14:05:46.353 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-08-02 14:05:52.010 [main] INFO  org.camunda.bpm.engine - ENGINE-00001 Process Engine default created.
+2025-08-02 14:05:53.467 [main] INFO  o.c.b.s.b.s.w.f.LazyInitRegistration - lazy initialized org.camunda.bpm.spring.boot.starter.webapp.filter.LazySecurityFilter@236ae13d
+2025-08-02 14:05:53.468 [main] INFO  o.c.b.s.b.s.w.f.LazyInitRegistration - lazy initialized org.camunda.bpm.spring.boot.starter.webapp.filter.LazyProcessEnginesFilter@4315c28c
+2025-08-02 14:05:53.560 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-08-02 14:05:53.572 [main] INFO  com.workflow.practice.Application - Started Application in 12.501 seconds (process running for 12.977)
+2025-08-02 14:05:53.574 [main] INFO  org.camunda.bpm.engine.jobexecutor - ENGINE-14014 Starting up the JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor].
+2025-08-02 14:05:53.575 [JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor]] INFO  org.camunda.bpm.engine.jobexecutor - ENGINE-14018 JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor] starting to acquire jobs
+2025-08-02 14:05:55.387 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-02 14:05:55.388 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-08-02 14:05:55.398 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 9 ms
+2025-08-02 14:06:07.309 [http-nio-8080-exec-7] INFO  c.w.delegates.FetchEmailDelegate - Executing FetchEmailDelegate for process instance: 5c23a79a-6fcb-11f0-9d16-4a4df0049497
+2025-08-02 14:06:07.313 [http-nio-8080-exec-7] INFO  c.w.delegates.FetchEmailDelegate - Accessing the input variable inside BPMN :: sapna.naveen@gmail.com
+2025-08-02 14:11:54.174 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-02 14:11:54.190 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-08-02 14:11:54.320 [SpringApplicationShutdownHook] INFO  org.camunda.bpm.engine.jobexecutor - ENGINE-14015 Shutting down the JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor]
+2025-08-02 14:11:54.321 [JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor]] INFO  org.camunda.bpm.engine.jobexecutor - ENGINE-14020 JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor] stopped job acquisition
+2025-08-02 14:11:54.324 [SpringApplicationShutdownHook] INFO  org.camunda.bpm.engine - ENGINE-00007 Process Engine default closed
+2025-08-02 14:11:54.326 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-08-02 14:11:54.340 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-08-02 14:13:11.648 [main] INFO  com.workflow.practice.Application - Starting Application using Java 21.0.8 with PID 22155 (/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes started by sapnanaveen in /Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app)
+2025-08-02 14:13:11.653 [main] INFO  com.workflow.practice.Application - No active profile set, falling back to 1 default profile: "default"
+2025-08-02 14:13:13.292 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-08-02 14:13:13.305 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-08-02 14:13:13.305 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-08-02 14:13:13.404 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-08-02 14:13:13.406 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1707 ms
+2025-08-02 14:13:13.456 [main] INFO  o.c.b.s.b.s.r.CamundaJerseyResourceConfig - Configuring camunda rest api.
+2025-08-02 14:13:13.478 [main] INFO  o.c.b.s.b.s.r.CamundaJerseyResourceConfig - Finished configuring camunda rest api.
+2025-08-02 14:13:14.053 [main] INFO  org.camunda.bpm.spring.boot - STARTER-SB040 Setting up jobExecutor with corePoolSize=3, maxPoolSize:10
+2025-08-02 14:13:14.124 [main] INFO  org.camunda.bpm.engine.cfg - ENGINE-12003 Plugin 'CompositeProcessEnginePlugin[genericPropertiesConfiguration, camundaProcessEngineConfiguration, camundaDatasourceConfiguration, camundaJobConfiguration, camundaHistoryConfiguration, camundaMetricsConfiguration, camundaAuthorizationConfiguration, camundaDeploymentConfiguration, createAdminUserConfiguration, failedJobConfiguration, eventPublisherPlugin, ApplicationContextClassloaderSwitchPlugin, ConnectProcessEnginePlugin, SpringBootSpinProcessEnginePlugin]' activated on process engine 'default'
+2025-08-02 14:13:15.392 [main] INFO  org.camunda.bpm.spring.boot - STARTER-SB021 Auto-Deploying resources: [file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/loan_eligibility.dmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/gateways.bpmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/subject_validation_multi_instance.dmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/firstProcess.bpmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/subject_code_name_error.dmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/loan_eligibility_with_discount.dmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/subject_attributes.dmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/sequence_flow.bpmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/subprocess_name_email.bpmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/log.bpmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/dmn.bpmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/subprocess.bpmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/subject_validation_collect.dmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/subject_validation.dmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/multi_instance.bpmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/subject_id_name.dmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/diagram_1.bpmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/tasks.bpmn]]
+2025-08-02 14:13:15.422 [main] INFO  o.c.b.s.b.s.e.EventPublisherPlugin - EVENTING-001: Initialized Camunda Spring Boot Eventing Engine Plugin.
+2025-08-02 14:13:15.423 [main] INFO  o.c.b.s.b.s.e.EventPublisherPlugin - EVENTING-003: Task events will be published as Spring Events.
+2025-08-02 14:13:15.424 [main] INFO  o.c.b.s.b.s.e.EventPublisherPlugin - EVENTING-005: Execution events will be published as Spring Events.
+2025-08-02 14:13:15.424 [main] INFO  o.c.b.s.b.s.e.EventPublisherPlugin - EVENTING-009: Listeners will not be invoked if a skipCustomListeners API parameter is set to true by user.
+2025-08-02 14:13:15.427 [main] INFO  o.c.b.s.b.s.e.EventPublisherPlugin - EVENTING-007: History events will be published as Spring events.
+2025-08-02 14:13:15.675 [main] INFO  org.camunda.bpm.connect - CNCT-01004 Discovered provider for connector id 'http-connector' and class 'org.camunda.connect.httpclient.impl.HttpConnectorImpl': 'org.camunda.connect.httpclient.impl.HttpConnectorProviderImpl'
+2025-08-02 14:13:15.684 [main] INFO  org.camunda.spin - SPIN-01010 Discovered Spin data format provider: org.camunda.spin.impl.json.jackson.format.JacksonJsonDataFormatProvider[name = application/json]
+2025-08-02 14:13:15.793 [main] INFO  org.camunda.spin - SPIN-01010 Discovered Spin data format provider: org.camunda.spin.impl.xml.dom.format.DomXmlDataFormatProvider[name = application/xml]
+2025-08-02 14:13:15.871 [main] INFO  org.camunda.spin - SPIN-01009 Discovered Spin data format: org.camunda.spin.impl.xml.dom.format.DomXmlDataFormat[name = application/xml]
+2025-08-02 14:13:15.872 [main] INFO  org.camunda.spin - SPIN-01009 Discovered Spin data format: org.camunda.spin.impl.json.jackson.format.JacksonJsonDataFormat[name = application/json]
+2025-08-02 14:13:16.073 [main] INFO  org.camunda.bpm.dmn.feel.scala - FEEL/SCALA-01001 Spin value mapper detected
+2025-08-02 14:13:16.143 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-08-02 14:13:16.464 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./camunda-h2-database user=
+2025-08-02 14:13:16.467 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-08-02 14:13:22.163 [main] INFO  org.camunda.bpm.engine - ENGINE-00001 Process Engine default created.
+2025-08-02 14:13:23.770 [main] ERROR org.camunda.bpm.engine.context - ENGINE-16004 Exception while closing command context: ENGINE-09005 Could not parse BPMN process. Errors: 
+* One of the attributes 'class', 'delegateExpression', 'type', or 'expression' is mandatory on serviceTask. If you are using a connector, make sure theconnect process engine plugin is registered with the process engine. | resource /Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/diagram_1.bpmn | line 15 | column 62
+org.camunda.bpm.engine.ParseException: ENGINE-09005 Could not parse BPMN process. Errors: 
+* One of the attributes 'class', 'delegateExpression', 'type', or 'expression' is mandatory on serviceTask. If you are using a connector, make sure theconnect process engine plugin is registered with the process engine. | resource /Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/diagram_1.bpmn | line 15 | column 62
+	at org.camunda.bpm.engine.impl.util.EngineUtilLogger.exceptionDuringParsing(EngineUtilLogger.java:66)
+	at org.camunda.bpm.engine.impl.util.xml.Parse.throwExceptionForErrors(Parse.java:240)
+	at org.camunda.bpm.engine.impl.bpmn.parser.BpmnParse.execute(BpmnParse.java:354)
+	at org.camunda.bpm.engine.impl.bpmn.deployer.BpmnDeployer.transformDefinitions(BpmnDeployer.java:106)
+	at org.camunda.bpm.engine.impl.AbstractDefinitionDeployer.transformResource(AbstractDefinitionDeployer.java:99)
+	at org.camunda.bpm.engine.impl.AbstractDefinitionDeployer.parseDefinitionResources(AbstractDefinitionDeployer.java:74)
+	at org.camunda.bpm.engine.impl.AbstractDefinitionDeployer.deploy(AbstractDefinitionDeployer.java:64)
+	at org.camunda.bpm.engine.impl.persistence.deploy.cache.CacheDeployer$1.call(CacheDeployer.java:54)
+	at org.camunda.bpm.engine.impl.persistence.deploy.cache.CacheDeployer$1.call(CacheDeployer.java:51)
+	at org.camunda.bpm.engine.impl.interceptor.CommandContext.runWithoutAuthorization(CommandContext.java:554)
+	at org.camunda.bpm.engine.impl.interceptor.CommandContext.runWithoutAuthorization(CommandContext.java:542)
+	at org.camunda.bpm.engine.impl.persistence.deploy.cache.CacheDeployer.deploy(CacheDeployer.java:51)
+	at org.camunda.bpm.engine.impl.persistence.deploy.cache.DeploymentCache.deploy(DeploymentCache.java:71)
+	at org.camunda.bpm.engine.impl.persistence.entity.DeploymentManager.insertDeployment(DeploymentManager.java:64)
+	at org.camunda.bpm.engine.impl.cmd.DeployCmd.deploy(DeployCmd.java:258)
+	at org.camunda.bpm.engine.impl.cmd.DeployCmd.lambda$doExecute$0(DeployCmd.java:155)
+	at org.camunda.bpm.engine.impl.interceptor.CommandContext.runWithoutAuthorization(CommandContext.java:554)
+	at org.camunda.bpm.engine.impl.interceptor.CommandContext.runWithoutAuthorization(CommandContext.java:542)
+	at org.camunda.bpm.engine.impl.cmd.DeployCmd.doExecute(DeployCmd.java:141)
+	at org.camunda.bpm.engine.impl.cmd.DeployCmd.execute(DeployCmd.java:101)
+	at org.camunda.bpm.engine.impl.cmd.DeployCmd.execute(DeployCmd.java:81)
+	at org.camunda.bpm.engine.impl.interceptor.CommandExecutorImpl.execute(CommandExecutorImpl.java:28)
+	at org.camunda.bpm.engine.impl.interceptor.CommandContextInterceptor.execute(CommandContextInterceptor.java:111)
+	at org.camunda.bpm.engine.spring.SpringTransactionInterceptor.lambda$execute$0(SpringTransactionInterceptor.java:62)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140)
+	at org.camunda.bpm.engine.spring.SpringTransactionInterceptor.execute(SpringTransactionInterceptor.java:62)
+	at org.camunda.bpm.engine.impl.interceptor.ProcessApplicationContextInterceptor.execute(ProcessApplicationContextInterceptor.java:70)
+	at org.camunda.bpm.engine.impl.interceptor.CommandCounterInterceptor.execute(CommandCounterInterceptor.java:34)
+	at org.camunda.bpm.engine.impl.interceptor.LogInterceptor.execute(LogInterceptor.java:33)
+	at org.camunda.bpm.engine.impl.interceptor.ExceptionCodeInterceptor.execute(ExceptionCodeInterceptor.java:55)
+	at org.camunda.bpm.engine.impl.RepositoryServiceImpl.deployWithResult(RepositoryServiceImpl.java:104)
+	at org.camunda.bpm.engine.impl.repository.DeploymentBuilderImpl.deployWithResult(DeploymentBuilderImpl.java:270)
+	at org.camunda.bpm.engine.impl.repository.DeploymentBuilderImpl.deploy(DeploymentBuilderImpl.java:266)
+	at org.camunda.bpm.engine.spring.SpringTransactionsProcessEngineConfiguration.autoDeployResources(SpringTransactionsProcessEngineConfiguration.java:145)
+	at org.camunda.bpm.engine.spring.SpringTransactionsProcessEngineConfiguration.buildProcessEngine(SpringTransactionsProcessEngineConfiguration.java:66)
+	at org.camunda.bpm.engine.spring.ProcessEngineFactoryBean.getObject(ProcessEngineFactoryBean.java:55)
+	at org.camunda.bpm.engine.spring.ProcessEngineFactoryBean.getObject(ProcessEngineFactoryBean.java:34)
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.doGetObjectFromFactoryBean(FactoryBeanRegistrySupport.java:186)
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.getObjectFromFactoryBean(FactoryBeanRegistrySupport.java:125)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getObjectForBeanInstance(AbstractBeanFactory.java:1884)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getObjectForBeanInstance(AbstractAutowireCapableBeanFactory.java:1302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:261)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1926)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1883)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1621)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1555)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:785)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:768)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:509)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1445)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:347)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1155)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1121)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1056)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.workflow.practice.Application.main(Application.java:11)
+2025-08-02 14:13:23.806 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'camundaIntegrationDeterminator': Unsatisfied dependency expressed through field 'processEngine': Error creating bean with name 'processEngineFactoryBean': FactoryBean threw exception on object creation
+2025-08-02 14:13:23.814 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-08-02 14:13:23.850 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-08-02 14:13:23.855 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2025-08-02 14:13:23.889 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-08-02 14:13:23.922 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'camundaIntegrationDeterminator': Unsatisfied dependency expressed through field 'processEngine': Error creating bean with name 'processEngineFactoryBean': FactoryBean threw exception on object creation
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:788)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:768)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:509)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1445)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:347)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1155)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1121)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1056)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.workflow.practice.Application.main(Application.java:11)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'processEngineFactoryBean': FactoryBean threw exception on object creation
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.doGetObjectFromFactoryBean(FactoryBeanRegistrySupport.java:192)
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.getObjectFromFactoryBean(FactoryBeanRegistrySupport.java:125)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getObjectForBeanInstance(AbstractBeanFactory.java:1884)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getObjectForBeanInstance(AbstractAutowireCapableBeanFactory.java:1302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:261)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1926)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1883)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1621)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1555)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:785)
+	... 22 common frames omitted
+Caused by: org.camunda.bpm.engine.ParseException: ENGINE-09005 Could not parse BPMN process. Errors: 
+* One of the attributes 'class', 'delegateExpression', 'type', or 'expression' is mandatory on serviceTask. If you are using a connector, make sure theconnect process engine plugin is registered with the process engine. | resource /Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/diagram_1.bpmn | line 15 | column 62
+	at org.camunda.bpm.engine.impl.util.EngineUtilLogger.exceptionDuringParsing(EngineUtilLogger.java:66)
+	at org.camunda.bpm.engine.impl.util.xml.Parse.throwExceptionForErrors(Parse.java:240)
+	at org.camunda.bpm.engine.impl.bpmn.parser.BpmnParse.execute(BpmnParse.java:354)
+	at org.camunda.bpm.engine.impl.bpmn.deployer.BpmnDeployer.transformDefinitions(BpmnDeployer.java:106)
+	at org.camunda.bpm.engine.impl.AbstractDefinitionDeployer.transformResource(AbstractDefinitionDeployer.java:99)
+	at org.camunda.bpm.engine.impl.AbstractDefinitionDeployer.parseDefinitionResources(AbstractDefinitionDeployer.java:74)
+	at org.camunda.bpm.engine.impl.AbstractDefinitionDeployer.deploy(AbstractDefinitionDeployer.java:64)
+	at org.camunda.bpm.engine.impl.persistence.deploy.cache.CacheDeployer$1.call(CacheDeployer.java:54)
+	at org.camunda.bpm.engine.impl.persistence.deploy.cache.CacheDeployer$1.call(CacheDeployer.java:51)
+	at org.camunda.bpm.engine.impl.interceptor.CommandContext.runWithoutAuthorization(CommandContext.java:554)
+	at org.camunda.bpm.engine.impl.interceptor.CommandContext.runWithoutAuthorization(CommandContext.java:542)
+	at org.camunda.bpm.engine.impl.persistence.deploy.cache.CacheDeployer.deploy(CacheDeployer.java:51)
+	at org.camunda.bpm.engine.impl.persistence.deploy.cache.DeploymentCache.deploy(DeploymentCache.java:71)
+	at org.camunda.bpm.engine.impl.persistence.entity.DeploymentManager.insertDeployment(DeploymentManager.java:64)
+	at org.camunda.bpm.engine.impl.cmd.DeployCmd.deploy(DeployCmd.java:258)
+	at org.camunda.bpm.engine.impl.cmd.DeployCmd.lambda$doExecute$0(DeployCmd.java:155)
+	at org.camunda.bpm.engine.impl.interceptor.CommandContext.runWithoutAuthorization(CommandContext.java:554)
+	at org.camunda.bpm.engine.impl.interceptor.CommandContext.runWithoutAuthorization(CommandContext.java:542)
+	at org.camunda.bpm.engine.impl.cmd.DeployCmd.doExecute(DeployCmd.java:141)
+	at org.camunda.bpm.engine.impl.cmd.DeployCmd.execute(DeployCmd.java:101)
+	at org.camunda.bpm.engine.impl.cmd.DeployCmd.execute(DeployCmd.java:81)
+	at org.camunda.bpm.engine.impl.interceptor.CommandExecutorImpl.execute(CommandExecutorImpl.java:28)
+	at org.camunda.bpm.engine.impl.interceptor.CommandContextInterceptor.execute(CommandContextInterceptor.java:111)
+	at org.camunda.bpm.engine.spring.SpringTransactionInterceptor.lambda$execute$0(SpringTransactionInterceptor.java:62)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140)
+	at org.camunda.bpm.engine.spring.SpringTransactionInterceptor.execute(SpringTransactionInterceptor.java:62)
+	at org.camunda.bpm.engine.impl.interceptor.ProcessApplicationContextInterceptor.execute(ProcessApplicationContextInterceptor.java:70)
+	at org.camunda.bpm.engine.impl.interceptor.CommandCounterInterceptor.execute(CommandCounterInterceptor.java:34)
+	at org.camunda.bpm.engine.impl.interceptor.LogInterceptor.execute(LogInterceptor.java:33)
+	at org.camunda.bpm.engine.impl.interceptor.ExceptionCodeInterceptor.execute(ExceptionCodeInterceptor.java:55)
+	at org.camunda.bpm.engine.impl.RepositoryServiceImpl.deployWithResult(RepositoryServiceImpl.java:104)
+	at org.camunda.bpm.engine.impl.repository.DeploymentBuilderImpl.deployWithResult(DeploymentBuilderImpl.java:270)
+	at org.camunda.bpm.engine.impl.repository.DeploymentBuilderImpl.deploy(DeploymentBuilderImpl.java:266)
+	at org.camunda.bpm.engine.spring.SpringTransactionsProcessEngineConfiguration.autoDeployResources(SpringTransactionsProcessEngineConfiguration.java:145)
+	at org.camunda.bpm.engine.spring.SpringTransactionsProcessEngineConfiguration.buildProcessEngine(SpringTransactionsProcessEngineConfiguration.java:66)
+	at org.camunda.bpm.engine.spring.ProcessEngineFactoryBean.getObject(ProcessEngineFactoryBean.java:55)
+	at org.camunda.bpm.engine.spring.ProcessEngineFactoryBean.getObject(ProcessEngineFactoryBean.java:34)
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.doGetObjectFromFactoryBean(FactoryBeanRegistrySupport.java:186)
+	... 33 common frames omitted
+2025-08-02 14:14:38.926 [main] INFO  com.workflow.practice.Application - Starting Application using Java 21.0.8 with PID 22173 (/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes started by sapnanaveen in /Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app)
+2025-08-02 14:14:38.931 [main] INFO  com.workflow.practice.Application - No active profile set, falling back to 1 default profile: "default"
+2025-08-02 14:14:40.546 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-08-02 14:14:40.561 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-08-02 14:14:40.561 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-08-02 14:14:40.655 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-08-02 14:14:40.657 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1682 ms
+2025-08-02 14:14:40.716 [main] INFO  o.c.b.s.b.s.r.CamundaJerseyResourceConfig - Configuring camunda rest api.
+2025-08-02 14:14:40.739 [main] INFO  o.c.b.s.b.s.r.CamundaJerseyResourceConfig - Finished configuring camunda rest api.
+2025-08-02 14:14:41.315 [main] INFO  org.camunda.bpm.spring.boot - STARTER-SB040 Setting up jobExecutor with corePoolSize=3, maxPoolSize:10
+2025-08-02 14:14:41.393 [main] INFO  org.camunda.bpm.engine.cfg - ENGINE-12003 Plugin 'CompositeProcessEnginePlugin[genericPropertiesConfiguration, camundaProcessEngineConfiguration, camundaDatasourceConfiguration, camundaJobConfiguration, camundaHistoryConfiguration, camundaMetricsConfiguration, camundaAuthorizationConfiguration, camundaDeploymentConfiguration, createAdminUserConfiguration, failedJobConfiguration, eventPublisherPlugin, ApplicationContextClassloaderSwitchPlugin, ConnectProcessEnginePlugin, SpringBootSpinProcessEnginePlugin]' activated on process engine 'default'
+2025-08-02 14:14:42.568 [main] INFO  org.camunda.bpm.spring.boot - STARTER-SB021 Auto-Deploying resources: [file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/loan_eligibility.dmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/gateways.bpmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/subject_validation_multi_instance.dmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/firstProcess.bpmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/subject_code_name_error.dmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/loan_eligibility_with_discount.dmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/subject_attributes.dmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/sequence_flow.bpmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/subprocess_name_email.bpmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/log.bpmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/dmn.bpmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/subprocess.bpmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/subject_validation_collect.dmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/subject_validation.dmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/multi_instance.bpmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/subject_id_name.dmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/tasks.bpmn]]
+2025-08-02 14:14:42.576 [main] INFO  o.c.b.s.b.s.e.EventPublisherPlugin - EVENTING-001: Initialized Camunda Spring Boot Eventing Engine Plugin.
+2025-08-02 14:14:42.577 [main] INFO  o.c.b.s.b.s.e.EventPublisherPlugin - EVENTING-003: Task events will be published as Spring Events.
+2025-08-02 14:14:42.577 [main] INFO  o.c.b.s.b.s.e.EventPublisherPlugin - EVENTING-005: Execution events will be published as Spring Events.
+2025-08-02 14:14:42.577 [main] INFO  o.c.b.s.b.s.e.EventPublisherPlugin - EVENTING-009: Listeners will not be invoked if a skipCustomListeners API parameter is set to true by user.
+2025-08-02 14:14:42.580 [main] INFO  o.c.b.s.b.s.e.EventPublisherPlugin - EVENTING-007: History events will be published as Spring events.
+2025-08-02 14:14:42.759 [main] INFO  org.camunda.bpm.connect - CNCT-01004 Discovered provider for connector id 'http-connector' and class 'org.camunda.connect.httpclient.impl.HttpConnectorImpl': 'org.camunda.connect.httpclient.impl.HttpConnectorProviderImpl'
+2025-08-02 14:14:42.765 [main] INFO  org.camunda.spin - SPIN-01010 Discovered Spin data format provider: org.camunda.spin.impl.json.jackson.format.JacksonJsonDataFormatProvider[name = application/json]
+2025-08-02 14:14:42.863 [main] INFO  org.camunda.spin - SPIN-01010 Discovered Spin data format provider: org.camunda.spin.impl.xml.dom.format.DomXmlDataFormatProvider[name = application/xml]
+2025-08-02 14:14:42.932 [main] INFO  org.camunda.spin - SPIN-01009 Discovered Spin data format: org.camunda.spin.impl.xml.dom.format.DomXmlDataFormat[name = application/xml]
+2025-08-02 14:14:42.933 [main] INFO  org.camunda.spin - SPIN-01009 Discovered Spin data format: org.camunda.spin.impl.json.jackson.format.JacksonJsonDataFormat[name = application/json]
+2025-08-02 14:14:43.115 [main] INFO  org.camunda.bpm.dmn.feel.scala - FEEL/SCALA-01001 Spin value mapper detected
+2025-08-02 14:14:43.173 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-08-02 14:14:43.641 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./camunda-h2-database user=
+2025-08-02 14:14:43.649 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-08-02 14:14:49.273 [main] INFO  org.camunda.bpm.engine - ENGINE-00001 Process Engine default created.
+2025-08-02 14:14:51.698 [main] INFO  o.c.b.s.b.s.w.f.LazyInitRegistration - lazy initialized org.camunda.bpm.spring.boot.starter.webapp.filter.LazyProcessEnginesFilter@5e7abaf7
+2025-08-02 14:14:51.729 [main] INFO  o.c.b.s.b.s.w.f.LazyInitRegistration - lazy initialized org.camunda.bpm.spring.boot.starter.webapp.filter.LazySecurityFilter@23e3f5cd
+2025-08-02 14:14:51.815 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-08-02 14:14:51.827 [main] INFO  com.workflow.practice.Application - Started Application in 13.691 seconds (process running for 14.234)
+2025-08-02 14:14:51.829 [main] INFO  org.camunda.bpm.engine.jobexecutor - ENGINE-14014 Starting up the JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor].
+2025-08-02 14:14:51.830 [JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor]] INFO  org.camunda.bpm.engine.jobexecutor - ENGINE-14018 JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor] starting to acquire jobs
+2025-08-02 14:14:52.581 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-02 14:14:52.600 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-08-02 14:14:52.622 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 20 ms
+2025-08-02 14:16:46.339 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-02 14:16:46.348 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-08-02 14:16:46.467 [SpringApplicationShutdownHook] INFO  org.camunda.bpm.engine.jobexecutor - ENGINE-14015 Shutting down the JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor]
+2025-08-02 14:16:46.469 [JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor]] INFO  org.camunda.bpm.engine.jobexecutor - ENGINE-14020 JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor] stopped job acquisition
+2025-08-02 14:16:46.471 [SpringApplicationShutdownHook] INFO  org.camunda.bpm.engine - ENGINE-00007 Process Engine default closed
+2025-08-02 14:16:46.472 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-08-02 14:16:46.811 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-08-02T14:28:38.698-04:00  INFO 22272 --- [main] com.workflow.practice.Application        : Starting Application using Java 21.0.8 with PID 22272 (/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes started by sapnanaveen in /Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app)
+2025-08-02T14:28:38.707-04:00  INFO 22272 --- [main] com.workflow.practice.Application        : No active profile set, falling back to 1 default profile: "default"
+2025-08-02T14:28:40.299-04:00  INFO 22272 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-02T14:28:40.310-04:00  INFO 22272 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-02T14:28:40.310-04:00  INFO 22272 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-08-02T14:28:40.373-04:00  INFO 22272 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-02T14:28:40.373-04:00  INFO 22272 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1604 ms
+2025-08-02T14:28:40.416-04:00  INFO 22272 --- [main] .c.b.s.b.s.r.CamundaJerseyResourceConfig : Configuring camunda rest api.
+2025-08-02T14:28:40.437-04:00  INFO 22272 --- [main] .c.b.s.b.s.r.CamundaJerseyResourceConfig : Finished configuring camunda rest api.
+2025-08-02T14:28:41.006-04:00  INFO 22272 --- [main] org.camunda.bpm.spring.boot              : STARTER-SB040 Setting up jobExecutor with corePoolSize=3, maxPoolSize:10
+2025-08-02T14:28:41.078-04:00  INFO 22272 --- [main] org.camunda.bpm.engine.cfg               : ENGINE-12003 Plugin 'CompositeProcessEnginePlugin[genericPropertiesConfiguration, camundaProcessEngineConfiguration, camundaDatasourceConfiguration, camundaJobConfiguration, camundaHistoryConfiguration, camundaMetricsConfiguration, camundaAuthorizationConfiguration, camundaDeploymentConfiguration, createAdminUserConfiguration, failedJobConfiguration, eventPublisherPlugin, ApplicationContextClassloaderSwitchPlugin, ConnectProcessEnginePlugin, SpringBootSpinProcessEnginePlugin]' activated on process engine 'default'
+2025-08-02T14:28:42.347-04:00  INFO 22272 --- [main] org.camunda.bpm.spring.boot              : STARTER-SB021 Auto-Deploying resources: [file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/loan_eligibility.dmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/gateways.bpmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/subject_validation_multi_instance.dmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/firstProcess.bpmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/subject_code_name_error.dmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/loan_eligibility_with_discount.dmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/subject_attributes.dmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/sequence_flow.bpmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/subprocess_name_email.bpmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/log.bpmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/dmn.bpmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/subprocess.bpmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/subject_validation_collect.dmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/subject_validation.dmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/multi_instance.bpmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/subject_id_name.dmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/tasks.bpmn]]
+2025-08-02T14:28:42.372-04:00  INFO 22272 --- [main] o.c.b.s.b.s.event.EventPublisherPlugin   : EVENTING-001: Initialized Camunda Spring Boot Eventing Engine Plugin.
+2025-08-02T14:28:42.373-04:00  INFO 22272 --- [main] o.c.b.s.b.s.event.EventPublisherPlugin   : EVENTING-003: Task events will be published as Spring Events.
+2025-08-02T14:28:42.373-04:00  INFO 22272 --- [main] o.c.b.s.b.s.event.EventPublisherPlugin   : EVENTING-005: Execution events will be published as Spring Events.
+2025-08-02T14:28:42.373-04:00  INFO 22272 --- [main] o.c.b.s.b.s.event.EventPublisherPlugin   : EVENTING-009: Listeners will not be invoked if a skipCustomListeners API parameter is set to true by user.
+2025-08-02T14:28:42.376-04:00  INFO 22272 --- [main] o.c.b.s.b.s.event.EventPublisherPlugin   : EVENTING-007: History events will be published as Spring events.
+2025-08-02T14:28:42.577-04:00  INFO 22272 --- [main] org.camunda.bpm.connect                  : CNCT-01004 Discovered provider for connector id 'http-connector' and class 'org.camunda.connect.httpclient.impl.HttpConnectorImpl': 'org.camunda.connect.httpclient.impl.HttpConnectorProviderImpl'
+2025-08-02T14:28:42.587-04:00  INFO 22272 --- [main] org.camunda.spin                         : SPIN-01010 Discovered Spin data format provider: org.camunda.spin.impl.json.jackson.format.JacksonJsonDataFormatProvider[name = application/json]
+2025-08-02T14:28:42.778-04:00  INFO 22272 --- [main] org.camunda.spin                         : SPIN-01010 Discovered Spin data format provider: org.camunda.spin.impl.xml.dom.format.DomXmlDataFormatProvider[name = application/xml]
+2025-08-02T14:28:42.927-04:00  INFO 22272 --- [main] org.camunda.spin                         : SPIN-01009 Discovered Spin data format: org.camunda.spin.impl.xml.dom.format.DomXmlDataFormat[name = application/xml]
+2025-08-02T14:28:42.928-04:00  INFO 22272 --- [main] org.camunda.spin                         : SPIN-01009 Discovered Spin data format: org.camunda.spin.impl.json.jackson.format.JacksonJsonDataFormat[name = application/json]
+2025-08-02T14:28:43.146-04:00  INFO 22272 --- [main] org.camunda.bpm.dmn.feel.scala           : FEEL/SCALA-01001 Spin value mapper detected
+2025-08-02T14:28:43.209-04:00  INFO 22272 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-02T14:28:43.520-04:00  INFO 22272 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./camunda-h2-database user=
+2025-08-02T14:28:43.523-04:00  INFO 22272 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-02T14:28:49.338-04:00  INFO 22272 --- [main] org.camunda.bpm.engine                   : ENGINE-00001 Process Engine default created.
+2025-08-02T14:28:52.067-04:00  INFO 22272 --- [main] o.c.b.s.b.s.w.f.LazyInitRegistration     : lazy initialized org.camunda.bpm.spring.boot.starter.webapp.filter.LazyProcessEnginesFilter@7f6329cb
+2025-08-02T14:28:52.100-04:00  INFO 22272 --- [main] o.c.b.s.b.s.w.f.LazyInitRegistration     : lazy initialized org.camunda.bpm.spring.boot.starter.webapp.filter.LazySecurityFilter@15fb4566
+2025-08-02T14:28:52.190-04:00  INFO 22272 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-08-02T14:28:52.206-04:00  INFO 22272 --- [main] com.workflow.practice.Application        : Started Application in 14.204 seconds (process running for 14.73)
+2025-08-02T14:28:52.208-04:00  INFO 22272 --- [main] org.camunda.bpm.engine.jobexecutor       : ENGINE-14014 Starting up the JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor].
+2025-08-02T14:28:52.209-04:00  INFO 22272 --- [JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor]] org.camunda.bpm.engine.jobexecutor       : ENGINE-14018 JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor] starting to acquire jobs
+2025-08-02T14:29:00.145-04:00  INFO 22272 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-02T14:29:00.146-04:00  INFO 22272 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-02T14:29:00.150-04:00  INFO 22272 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2025-08-02T14:49:50.419-04:00  WARN 22272 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m6s741ms).
+2025-08-02T15:10:02.664-04:00  INFO 22272 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-02T15:10:02.673-04:00  INFO 22272 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-02T15:10:03.115-04:00  INFO 22272 --- [SpringApplicationShutdownHook] org.camunda.bpm.engine.jobexecutor       : ENGINE-14015 Shutting down the JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor]
+2025-08-02T15:10:03.119-04:00  INFO 22272 --- [JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor]] org.camunda.bpm.engine.jobexecutor       : ENGINE-14020 JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor] stopped job acquisition
+2025-08-02T15:10:03.132-04:00  INFO 22272 --- [SpringApplicationShutdownHook] org.camunda.bpm.engine                   : ENGINE-00007 Process Engine default closed
+2025-08-02T15:10:03.139-04:00  INFO 22272 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-02T15:10:03.315-04:00  INFO 22272 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-02T15:10:40.370-04:00  INFO 22453 --- [main] com.workflow.practice.Application        : Starting Application using Java 21.0.8 with PID 22453 (/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes started by sapnanaveen in /Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app)
+2025-08-02T15:10:40.378-04:00  INFO 22453 --- [main] com.workflow.practice.Application        : No active profile set, falling back to 1 default profile: "default"
+2025-08-02T15:10:41.989-04:00  INFO 22453 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-02T15:10:41.998-04:00  INFO 22453 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-02T15:10:41.998-04:00  INFO 22453 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-08-02T15:10:42.050-04:00  INFO 22453 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-02T15:10:42.051-04:00  INFO 22453 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1610 ms
+2025-08-02T15:10:42.081-04:00  INFO 22453 --- [main] .c.b.s.b.s.r.CamundaJerseyResourceConfig : Configuring camunda rest api.
+2025-08-02T15:10:42.103-04:00  INFO 22453 --- [main] .c.b.s.b.s.r.CamundaJerseyResourceConfig : Finished configuring camunda rest api.
+2025-08-02T15:10:42.670-04:00  INFO 22453 --- [main] org.camunda.bpm.spring.boot              : STARTER-SB040 Setting up jobExecutor with corePoolSize=3, maxPoolSize:10
+2025-08-02T15:10:42.742-04:00  INFO 22453 --- [main] org.camunda.bpm.engine.cfg               : ENGINE-12003 Plugin 'CompositeProcessEnginePlugin[genericPropertiesConfiguration, camundaProcessEngineConfiguration, camundaDatasourceConfiguration, camundaJobConfiguration, camundaHistoryConfiguration, camundaMetricsConfiguration, camundaAuthorizationConfiguration, camundaDeploymentConfiguration, createAdminUserConfiguration, failedJobConfiguration, eventPublisherPlugin, ApplicationContextClassloaderSwitchPlugin, ConnectProcessEnginePlugin, SpringBootSpinProcessEnginePlugin]' activated on process engine 'default'
+2025-08-02T15:10:44.025-04:00  INFO 22453 --- [main] org.camunda.bpm.spring.boot              : STARTER-SB021 Auto-Deploying resources: [file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/loan_eligibility.dmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/gateways.bpmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/subject_validation_multi_instance.dmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/firstProcess.bpmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/subject_code_name_error.dmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/loan_eligibility_with_discount.dmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/subject_attributes.dmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/sequence_flow.bpmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/subprocess_name_email.bpmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/log.bpmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/dmn.bpmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/subprocess.bpmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/subject_validation_collect.dmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/subject_validation.dmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/multi_instance.bpmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/subject_id_name.dmn], file [/Users/sapnanaveen/Documents/JavaProjects/camundaWithSpringboot/newCamunda-app/target/classes/tasks.bpmn]]
+2025-08-02T15:10:44.053-04:00  INFO 22453 --- [main] o.c.b.s.b.s.event.EventPublisherPlugin   : EVENTING-001: Initialized Camunda Spring Boot Eventing Engine Plugin.
+2025-08-02T15:10:44.054-04:00  INFO 22453 --- [main] o.c.b.s.b.s.event.EventPublisherPlugin   : EVENTING-003: Task events will be published as Spring Events.
+2025-08-02T15:10:44.054-04:00  INFO 22453 --- [main] o.c.b.s.b.s.event.EventPublisherPlugin   : EVENTING-005: Execution events will be published as Spring Events.
+2025-08-02T15:10:44.054-04:00  INFO 22453 --- [main] o.c.b.s.b.s.event.EventPublisherPlugin   : EVENTING-009: Listeners will not be invoked if a skipCustomListeners API parameter is set to true by user.
+2025-08-02T15:10:44.057-04:00  INFO 22453 --- [main] o.c.b.s.b.s.event.EventPublisherPlugin   : EVENTING-007: History events will be published as Spring events.
+2025-08-02T15:10:44.274-04:00  INFO 22453 --- [main] org.camunda.bpm.connect                  : CNCT-01004 Discovered provider for connector id 'http-connector' and class 'org.camunda.connect.httpclient.impl.HttpConnectorImpl': 'org.camunda.connect.httpclient.impl.HttpConnectorProviderImpl'
+2025-08-02T15:10:44.285-04:00  INFO 22453 --- [main] org.camunda.spin                         : SPIN-01010 Discovered Spin data format provider: org.camunda.spin.impl.json.jackson.format.JacksonJsonDataFormatProvider[name = application/json]
+2025-08-02T15:10:44.389-04:00  INFO 22453 --- [main] org.camunda.spin                         : SPIN-01010 Discovered Spin data format provider: org.camunda.spin.impl.xml.dom.format.DomXmlDataFormatProvider[name = application/xml]
+2025-08-02T15:10:44.476-04:00  INFO 22453 --- [main] org.camunda.spin                         : SPIN-01009 Discovered Spin data format: org.camunda.spin.impl.xml.dom.format.DomXmlDataFormat[name = application/xml]
+2025-08-02T15:10:44.477-04:00  INFO 22453 --- [main] org.camunda.spin                         : SPIN-01009 Discovered Spin data format: org.camunda.spin.impl.json.jackson.format.JacksonJsonDataFormat[name = application/json]
+2025-08-02T15:10:44.699-04:00  INFO 22453 --- [main] org.camunda.bpm.dmn.feel.scala           : FEEL/SCALA-01001 Spin value mapper detected
+2025-08-02T15:10:44.758-04:00  INFO 22453 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-02T15:10:45.053-04:00  INFO 22453 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./camunda-h2-database user=
+2025-08-02T15:10:45.056-04:00  INFO 22453 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-02T15:10:51.188-04:00  INFO 22453 --- [main] org.camunda.bpm.engine                   : ENGINE-00001 Process Engine default created.
+2025-08-02T15:10:54.195-04:00  INFO 22453 --- [main] o.c.b.s.b.s.w.f.LazyInitRegistration     : lazy initialized org.camunda.bpm.spring.boot.starter.webapp.filter.LazyProcessEnginesFilter@7186b202
+2025-08-02T15:10:54.226-04:00  INFO 22453 --- [main] o.c.b.s.b.s.w.f.LazyInitRegistration     : lazy initialized org.camunda.bpm.spring.boot.starter.webapp.filter.LazySecurityFilter@22bf9122
+2025-08-02T15:10:54.325-04:00  INFO 22453 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-08-02T15:10:54.340-04:00  INFO 22453 --- [main] com.workflow.practice.Application        : Started Application in 14.657 seconds (process running for 15.157)
+2025-08-02T15:10:54.343-04:00  INFO 22453 --- [main] org.camunda.bpm.engine.jobexecutor       : ENGINE-14014 Starting up the JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor].
+2025-08-02T15:10:54.344-04:00  INFO 22453 --- [JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor]] org.camunda.bpm.engine.jobexecutor       : ENGINE-14018 JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor] starting to acquire jobs
+2025-08-02T15:18:38.016-04:00  WARN 22453 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m52s798ms).
+2025-08-02T15:19:45.957-04:00  INFO 22453 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-02T15:19:45.958-04:00  INFO 22453 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-02T15:19:45.967-04:00  INFO 22453 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2025-08-02T15:22:27.780-04:00  INFO 22453 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-02T15:22:27.793-04:00  INFO 22453 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-02T15:22:27.956-04:00  INFO 22453 --- [SpringApplicationShutdownHook] org.camunda.bpm.engine.jobexecutor       : ENGINE-14015 Shutting down the JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor]
+2025-08-02T15:22:27.956-04:00  INFO 22453 --- [JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor]] org.camunda.bpm.engine.jobexecutor       : ENGINE-14020 JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor] stopped job acquisition
+2025-08-02T15:22:27.958-04:00  INFO 22453 --- [SpringApplicationShutdownHook] org.camunda.bpm.engine                   : ENGINE-00007 Process Engine default closed
+2025-08-02T15:22:27.960-04:00  INFO 22453 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-02T15:22:27.976-04:00  INFO 22453 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

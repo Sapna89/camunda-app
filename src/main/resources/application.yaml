@@ -9,3 +9,19 @@ camunda:
     generic-properties:
       properties:
         historyTimeToLive: 5
+    script-engine-name-javascript: graal.js
+
+logging:
+  file:
+    path: ./logs/
+    name: camunda-app.log
+  level:
+    root: INFO
+    # It's helpful to set the logging level for the scripting engine specifically
+    org:
+      camunda:
+        bpm:
+          application: INFO
+          engine:
+            impl:
+              scripting: INFO

@@ -2,18 +2,22 @@ package com.workflow.delegates;
 
 import org.camunda.bpm.engine.delegate.DelegateExecution;
 import org.camunda.bpm.engine.delegate.JavaDelegate;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
 
 public class FetchEmailDelegate implements JavaDelegate {
+    private static final Logger LOGGER = LoggerFactory.getLogger(FetchEmailDelegate.class);
 
 
     @Override
     public void execute(DelegateExecution execution) throws Exception {
-        System.out.println("coming from fetch email delegate");
+        LOGGER.info("Executing FetchEmailDelegate for process instance: {}", execution.getProcessInstanceId());
+
         execution.setVariable("userEmailFromFetchEmailDelegate", "Mimi09@gmail.com");
 
-        System.out.println("accessing the input varible inside BPMN :: " + execution.getVariable("useEmailInput"));
+        LOGGER.info("Accessing the input variable inside BPMN :: {}", execution.getVariable("useEmailInput"));
 
         execution.setVariable("userEmailFromFetchEmailDelegate", "Mimi09@gmail.com");
 

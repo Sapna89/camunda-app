@@ -28,7 +28,14 @@ obj;</camunda:script>
       </bpmn:extensionElements>
       <bpmn:incoming>Flow_18mm7xo</bpmn:incoming>
       <bpmn:outgoing>Flow_02ffndl</bpmn:outgoing>
-      <bpmn:script>var obj = {
+      <bpmn:script>var processId = execution.getProcessInstanceId();
+var myVariable = execution.getVariable("myVariable");
+
+print("This is a log message from a JavaScript script task.");
+print("Process Instance ID: " + processId);
+print("Value of 'myVariable': " + myVariable);
+
+var obj = {
     Id: 1,
     Name: "Sapna"
 }
